@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="505" id="KGk-i7-Jjw" customClass="TableViewCellKanbanCellTypeA" customModule="NewbieZone" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="400" height="538"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="400" height="537.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="AdB-5w-sbe">
+                        <rect key="frame" x="0.0" y="-56" width="400" height="456"/>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ing-Xx-nqc">
+                        <rect key="frame" x="0.0" y="0.0" width="400" height="400"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="400" id="h4P-rI-keG"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="AdB-5w-sbe" firstAttribute="width" secondItem="ing-Xx-nqc" secondAttribute="width" id="7Mj-6F-LIu"/>
+                    <constraint firstItem="AdB-5w-sbe" firstAttribute="top" secondItem="ing-Xx-nqc" secondAttribute="top" constant="-56" id="LVd-qb-mqE"/>
+                    <constraint firstItem="AdB-5w-sbe" firstAttribute="leading" secondItem="ing-Xx-nqc" secondAttribute="leading" id="TGy-G8-8Cj"/>
+                    <constraint firstItem="AdB-5w-sbe" firstAttribute="bottom" secondItem="ing-Xx-nqc" secondAttribute="bottom" id="TOw-WX-cS9"/>
+                    <constraint firstItem="ing-Xx-nqc" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" id="YWP-2F-L37"/>
+                    <constraint firstItem="ing-Xx-nqc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="cau-14-FfU"/>
+                    <constraint firstItem="ing-Xx-nqc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="dYZ-pY-8p7"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="imageKanbanBG" destination="AdB-5w-sbe" id="Ien-T9-2ek"/>
+                <outlet property="imageKanbanContent" destination="ing-Xx-nqc" id="Tx8-9g-91E"/>
+                <outlet property="imageKanbanContentHeight" destination="h4P-rI-keG" id="ikY-dJ-F1Y"/>
+            </connections>
+            <point key="canvasLocation" x="263" y="423"/>
+        </tableViewCell>
+    </objects>
+</document>
