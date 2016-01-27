@@ -25,12 +25,13 @@ class TableViewControllerKanban: UITableViewController {
         userInfo1.userID = 0
         userInfo1.userName = "用户名1"
         userInfo1.userTitle = "@初号机驾驶员"
-		userInfo1.userAvatar = "1122"
+		userInfo1.userAvatar = "girl.png"
 		
 		let userInfo2 = ModelUser()
 		userInfo2.userID = 1
 		userInfo2.userName = "用户名222222"
 		userInfo2.userTitle = "@死鱼眼"
+		userInfo1.userAvatar = "girl.png"
 		
         let kanbanInfo1 = ModelKanban()
         kanbanInfo1.kanbanUserInfo = userInfo1
@@ -80,6 +81,7 @@ class TableViewControllerKanban: UITableViewController {
     override func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let viewHeader = tableView.dequeueReusableHeaderFooterViewWithIdentifier("TableViewHeaderKanban") as! TableViewHeaderKanban
 		viewHeader.setUserInfo(kanbanList[section].kanbanUserInfo)
+		viewHeader.labelSub.text = kanbanList[section].kanbanDateTime
         return viewHeader
     }
 
