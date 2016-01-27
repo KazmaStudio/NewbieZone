@@ -619,7 +619,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				PROVISIONING_PROFILE = "0c19a3d7-ed37-4ff4-89a0-389b6d0c253a";
+				PROVISIONING_PROFILE = "762a69fc-a4e0-4cf7-96f2-46f5a208a509";
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -658,7 +658,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PROVISIONING_PROFILE = "0c19a3d7-ed37-4ff4-89a0-389b6d0c253a";
+				PROVISIONING_PROFILE = "762a69fc-a4e0-4cf7-96f2-46f5a208a509";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -680,6 +680,7 @@
 					"$(PROJECT_DIR)/Framework/Kingfisher",
 				);
 				INFOPLIST_FILE = NewbieZone/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kazmastudio.NewbieZone;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -701,6 +702,7 @@
 					"$(PROJECT_DIR)/Framework/Kingfisher",
 				);
 				INFOPLIST_FILE = NewbieZone/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kazmastudio.NewbieZone;
 				PRODUCT_NAME = "$(TARGET_NAME)";

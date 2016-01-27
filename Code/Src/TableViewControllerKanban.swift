@@ -24,18 +24,30 @@ class TableViewControllerKanban: UITableViewController {
         let userInfo1 = ModelUser()
         userInfo1.userID = 0
         userInfo1.userName = "用户名1"
-        userInfo1.userTitle = ""
-        
+        userInfo1.userTitle = "@初号机驾驶员"
+		userInfo1.userAvatar = "1122"
+		
+		let userInfo2 = ModelUser()
+		userInfo2.userID = 1
+		userInfo2.userName = "用户名222222"
+		userInfo2.userTitle = "@死鱼眼"
+		
         let kanbanInfo1 = ModelKanban()
         kanbanInfo1.kanbanUserInfo = userInfo1
         kanbanInfo1.kanbanDateTime = "2015/12/28 16:01"
         
         let kanbanInfo2 = ModelKanban()
-        kanbanInfo2.kanbanUserInfo = userInfo1
+        kanbanInfo2.kanbanUserInfo = userInfo2
         kanbanInfo2.kanbanDateTime = "2015/12/28 15:23"
         
         kanbanList.append(kanbanInfo1)
-        kanbanList.append(kanbanInfo1)
+        kanbanList.append(kanbanInfo2)
+		kanbanList.append(kanbanInfo2)
+		kanbanList.append(kanbanInfo1)
+		kanbanList.append(kanbanInfo2)
+		kanbanList.append(kanbanInfo1)
+		kanbanList.append(kanbanInfo1)
+		kanbanList.append(kanbanInfo1)
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -53,7 +65,7 @@ class TableViewControllerKanban: UITableViewController {
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 8
+        return kanbanList.count
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -67,7 +79,7 @@ class TableViewControllerKanban: UITableViewController {
     
     override func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let viewHeader = tableView.dequeueReusableHeaderFooterViewWithIdentifier("TableViewHeaderKanban") as! TableViewHeaderKanban
-        
+		viewHeader.setUserInfo(kanbanList[section].kanbanUserInfo)
         return viewHeader
     }
 

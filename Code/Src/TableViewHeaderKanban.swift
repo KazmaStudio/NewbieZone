@@ -32,5 +32,26 @@ class TableViewHeaderKanban: UITableViewHeaderFooterView {
         
         viewBG.bringSubviewToFront(viewUserInfo)
     }
+	
+	func setUserInfo(userInfo: ModelUser) {
+		
+		self.labelName.text = userInfo.userName
+		self.labelTitle.text = userInfo.userTitle
+		
+		// userInfo.userAvatar: String = nil
+		self.imageAvatar.image = UIImage.init(named: userInfo.userAvatar!) // crash
+		
+		// 方法1
+		if (userInfo.userAvatar != nil){
+			self.imageAvatar.image = UIImage.init(named: userInfo.userAvatar!)
+		}
+		
+		// 方法2
+		guard userInfo.userAvatar != nil else{return}
+		self.imageAvatar.image = UIImage.init(named: userInfo.userAvatar!)
+		
+		// 方法3
+		_ = userInfo.userAvatar.map{$0}.map{self.imageAvatar.image = UIImage.init(named: $0)}
+	}
     
 }
