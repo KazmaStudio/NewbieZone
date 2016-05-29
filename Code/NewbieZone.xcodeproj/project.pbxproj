@@ -97,8 +97,8 @@
 		06AEA9DE1C328A4A008ED5CF /* UIView+XIBEdit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+XIBEdit.swift"; sourceTree = "<group>"; };
 		06AEA9E51C328BEC008ED5CF /* TableViewCellKanbanCellTypeA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCellKanbanCellTypeA.swift; sourceTree = "<group>"; };
 		06AEA9E61C328BEC008ED5CF /* TableViewCellKanbanCellTypeA.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCellKanbanCellTypeA.xib; sourceTree = "<group>"; };
-		06AEA9EB1C328CCB008ED5CF /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Framework/Alamofire/Alamofire.framework; sourceTree = "<group>"; };
-		06AEA9EE1C328CDB008ED5CF /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kingfisher.framework; path = Framework/Kingfisher/Kingfisher.framework; sourceTree = "<group>"; };
+		06AEA9EB1C328CCB008ED5CF /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Alamofire.framework; sourceTree = "<group>"; };
+		06AEA9EE1C328CDB008ED5CF /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Kingfisher.framework; sourceTree = "<group>"; };
 		06AEA9F11C3378F6008ED5CF /* UICommon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UICommon.swift; sourceTree = "<group>"; };
 		06AEA9F41C33AA60008ED5CF /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		06AEAA0B1C33BEF9008ED5CF /* TableViewHeaderKanban.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewHeaderKanban.swift; sourceTree = "<group>"; };
@@ -156,8 +156,6 @@
 		065FCA7B1C294BA400264691 = {
 			isa = PBXGroup;
 			children = (
-				06AEA9EE1C328CDB008ED5CF /* Kingfisher.framework */,
-				06AEA9EB1C328CCB008ED5CF /* Alamofire.framework */,
 				06AEA9F91C33B234008ED5CF /* Resource */,
 				06AEA9DC1C3288D3008ED5CF /* Lib */,
 				06AEA9D11C3286E1008ED5CF /* Framework */,
@@ -250,6 +248,7 @@
 		06AEA9D61C328754008ED5CF /* Alamofire */ = {
 			isa = PBXGroup;
 			children = (
+				06AEA9EB1C328CCB008ED5CF /* Alamofire.framework */,
 			);
 			path = Alamofire;
 			sourceTree = "<group>";
@@ -257,6 +256,7 @@
 		06AEA9D81C328754008ED5CF /* Kingfisher */ = {
 			isa = PBXGroup;
 			children = (
+				06AEA9EE1C328CDB008ED5CF /* Kingfisher.framework */,
 			);
 			path = Kingfisher;
 			sourceTree = "<group>";
@@ -597,7 +597,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -643,7 +643,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
