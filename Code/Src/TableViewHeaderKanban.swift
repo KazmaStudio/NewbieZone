@@ -21,10 +21,9 @@ class TableViewHeaderKanban: UITableViewHeaderFooterView {
     @IBOutlet weak var labelTitle: UILabel!
     
     @IBOutlet weak var labelSub: UILabel!
-    // Only override drawRect: if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
+    
     override func drawRect(rect: CGRect) {
-        // Drawing code
+        
         let blurEffectLight = UIBlurEffect(style: UIBlurEffectStyle.ExtraLight)
         let imageKanbanBGBlurViewLight = UIVisualEffectView(effect: blurEffectLight)
         imageKanbanBGBlurViewLight.frame = CGRectMake(0, 0, ScreenWith, 56.0)
@@ -34,9 +33,13 @@ class TableViewHeaderKanban: UITableViewHeaderFooterView {
     }
 	
 	func setUserInfo(userInfo: ModelUser) {
+        
+        if (userInfo.userTitle != "新手村NPC"){
+            self.labelTitle.textColor = UIColor.lightGrayColor()
+        }
 		
 		self.labelName.text = userInfo.userName
-		self.labelTitle.text = userInfo.userTitle
+		self.labelTitle.text = "&" + userInfo.userTitle!
 		
 		// userInfo.userAvatar: String = nil
 		//self.imageAvatar.image = UIImage.init(named: userInfo.userAvatar!) // crash

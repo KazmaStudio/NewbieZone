@@ -15,6 +15,10 @@ class TableViewControllerKanban: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+       // :[NSDictionary dictionaryWithObjectsAndKeys:[UIColor blackColor], NSForegroundColorAttributeName, [UIFont fontWithName:@"Helvetica" size:12.0f],NSFontAttributeName,nil]
+        
+       
+        
         let cellGoodsNib = UINib(nibName: "TableViewCellKanbanCellTypeA", bundle: nil)
         self.tableView.registerNib(cellGoodsNib, forCellReuseIdentifier: "TableViewCellKanbanCellTypeA")
         
@@ -23,14 +27,14 @@ class TableViewControllerKanban: UITableViewController {
         
         let userInfo1 = ModelUser()
         userInfo1.userID = 0
-        userInfo1.userName = "用户名1"
-        userInfo1.userTitle = "@初号机驾驶员"
+        userInfo1.userName = "番号姬"
+        userInfo1.userTitle = "新手村NPC"
 		userInfo1.userAvatar = "girl.png"
 		
 		let userInfo2 = ModelUser()
 		userInfo2.userID = 1
-		userInfo2.userName = "用户名222222"
-		userInfo2.userTitle = "@死鱼眼"
+		userInfo2.userName = "手办收割者"
+		userInfo2.userTitle = "新手村NPC"
 		userInfo1.userAvatar = "girl.png"
 		
         let kanbanInfo1 = ModelKanban()
@@ -95,6 +99,8 @@ class TableViewControllerKanban: UITableViewController {
         // Configure the cell...
         
         let imageContent = UIImage.init(named: "GK" + String( indexPath.section ) + ".jpg")
+        
+        guard imageContent != nil else{return cell}
         
         cell.imageKanbanContent!.image = imageContent
         cell.imageKanbanBG!.image = imageContent

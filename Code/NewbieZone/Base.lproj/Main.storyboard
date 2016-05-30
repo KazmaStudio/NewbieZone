@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="MBk-0R-unW">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="MBk-0R-unW">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
         <!--Tab Bar Controller-->
@@ -16,7 +16,6 @@
                     </tabBar>
                     <connections>
                         <segue destination="1Jz-3o-bZR" kind="relationship" relationship="viewControllers" id="360-tf-dkQ"/>
-                        <segue destination="OYg-Sc-J0Y" kind="relationship" relationship="viewControllers" id="GBF-jZ-x1b"/>
                         <segue destination="qev-wH-eOu" kind="relationship" relationship="viewControllers" id="4iX-oA-ueO"/>
                         <segue destination="3tM-Ue-rAE" kind="relationship" relationship="viewControllers" id="2rT-Eg-bBm"/>
                     </connections>
@@ -29,7 +28,9 @@
         <scene sceneID="J3W-PA-Nxt">
             <objects>
                 <navigationController title="看板" id="1Jz-3o-bZR" customClass="NavigationControllerKanban" customModule="NewbieZone" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="看板" id="a7e-DU-Nqi" userLabel="看板"/>
+                    <tabBarItem key="tabBarItem" title="📜" id="a7e-DU-Nqi">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-8"/>
+                    </tabBarItem>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="i1M-CD-bUs">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -42,7 +43,7 @@
         <!--奇怪的猫-->
         <scene sceneID="pyZ-uh-zVm">
             <objects>
-                <navigationController id="OYg-Sc-J0Y" customClass="NavigationControllerHentaiNeko" customModule="NewbieZone" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="NavigationControllerHentaiNeko" id="OYg-Sc-J0Y" customClass="NavigationControllerHentaiNeko" customModule="NewbieZone" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="奇怪的猫" id="xoG-CP-uuq"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="zFQ-AF-NBK">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -53,11 +54,13 @@
             </objects>
             <point key="canvasLocation" x="-446" y="-1037"/>
         </scene>
-        <!--地下城-->
+        <!--⚔-->
         <scene sceneID="7YT-OV-4R3">
             <objects>
                 <navigationController id="qev-wH-eOu" customClass="NavigationControllerDanjon" customModule="NewbieZone" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="地下城" id="bOc-UZ-pc1"/>
+                    <tabBarItem key="tabBarItem" title="⚔" id="bOc-UZ-pc1">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-8"/>
+                    </tabBarItem>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="RgV-zG-oCu">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -67,11 +70,13 @@
             </objects>
             <point key="canvasLocation" x="-446" y="-241"/>
         </scene>
-        <!--新手村-->
+        <!--🏚-->
         <scene sceneID="hm6-2a-3YK">
             <objects>
                 <navigationController id="3tM-Ue-rAE" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="新手村" id="vVU-Rs-q8u"/>
+                    <tabBarItem key="tabBarItem" title="🏚" id="vVU-Rs-q8u">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-8"/>
+                    </tabBarItem>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Wcl-i4-q1J">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
