@@ -28,7 +28,7 @@
         <scene sceneID="J3W-PA-Nxt">
             <objects>
                 <navigationController title="看板" id="1Jz-3o-bZR" customClass="NavigationControllerKanban" customModule="NewbieZone" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="📜" id="a7e-DU-Nqi">
+                    <tabBarItem key="tabBarItem" title="看板" id="a7e-DU-Nqi">
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-8"/>
                     </tabBarItem>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="i1M-CD-bUs">
@@ -54,11 +54,11 @@
             </objects>
             <point key="canvasLocation" x="-446" y="-1037"/>
         </scene>
-        <!--⚔-->
+        <!--地下城-->
         <scene sceneID="7YT-OV-4R3">
             <objects>
                 <navigationController id="qev-wH-eOu" customClass="NavigationControllerDanjon" customModule="NewbieZone" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="⚔" id="bOc-UZ-pc1">
+                    <tabBarItem key="tabBarItem" title="地下城" id="bOc-UZ-pc1">
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-8"/>
                     </tabBarItem>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="RgV-zG-oCu">
@@ -70,11 +70,11 @@
             </objects>
             <point key="canvasLocation" x="-446" y="-241"/>
         </scene>
-        <!--🏚-->
+        <!--我的-->
         <scene sceneID="hm6-2a-3YK">
             <objects>
                 <navigationController id="3tM-Ue-rAE" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="🏚" id="vVU-Rs-q8u">
+                    <tabBarItem key="tabBarItem" title="我的" id="vVU-Rs-q8u">
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-8"/>
                     </tabBarItem>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Wcl-i4-q1J">
