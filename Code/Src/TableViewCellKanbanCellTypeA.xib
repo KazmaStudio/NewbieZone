@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -23,10 +24,55 @@
                             <constraint firstAttribute="height" constant="400" id="h4P-rI-keG"/>
                         </constraints>
                     </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E5Q-1E-Pbj">
+                        <rect key="frame" x="0.0" y="400" width="400" height="32"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image.png" translatesAutoresizingMaskIntoConstraints="NO" id="OWg-a6-FrX">
+                                <rect key="frame" x="8" y="8" width="16" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="16" id="0pF-Yg-BZx"/>
+                                    <constraint firstAttribute="height" constant="16" id="ceF-MC-xud"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="×5" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gx3-dO-b5d">
+                                <rect key="frame" x="24" y="9" width="15.5" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6hI-PH-yVt">
+                                <rect key="frame" x="47" y="0.0" width="344.5" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="yqA-Hl-O84"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="6hI-PH-yVt" firstAttribute="leading" secondItem="gx3-dO-b5d" secondAttribute="trailing" constant="8" id="5QS-bb-bSO"/>
+                            <constraint firstItem="6hI-PH-yVt" firstAttribute="top" secondItem="E5Q-1E-Pbj" secondAttribute="top" id="NoG-db-x5v"/>
+                            <constraint firstItem="OWg-a6-FrX" firstAttribute="centerY" secondItem="E5Q-1E-Pbj" secondAttribute="centerY" id="QBm-75-Jh9"/>
+                            <constraint firstItem="gx3-dO-b5d" firstAttribute="leading" secondItem="OWg-a6-FrX" secondAttribute="trailing" id="TU8-Gf-3X0"/>
+                            <constraint firstAttribute="height" constant="32" id="WVJ-DL-fFS"/>
+                            <constraint firstItem="gx3-dO-b5d" firstAttribute="centerY" secondItem="E5Q-1E-Pbj" secondAttribute="centerY" id="iBT-0B-fiB"/>
+                            <constraint firstAttribute="trailing" secondItem="6hI-PH-yVt" secondAttribute="trailing" constant="8" id="q3i-7g-UoK"/>
+                            <constraint firstItem="OWg-a6-FrX" firstAttribute="leading" secondItem="E5Q-1E-Pbj" secondAttribute="leading" constant="8" id="vvf-f3-X8R"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                <size key="value" width="0.0" height="2"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
                 </subviews>
                 <constraints>
+                    <constraint firstItem="E5Q-1E-Pbj" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-8" id="69X-JF-ZSI"/>
                     <constraint firstItem="AdB-5w-sbe" firstAttribute="width" secondItem="ing-Xx-nqc" secondAttribute="width" id="7Mj-6F-LIu"/>
                     <constraint firstItem="AdB-5w-sbe" firstAttribute="top" secondItem="ing-Xx-nqc" secondAttribute="top" constant="-56" id="LVd-qb-mqE"/>
+                    <constraint firstItem="E5Q-1E-Pbj" firstAttribute="top" secondItem="ing-Xx-nqc" secondAttribute="bottom" id="REN-a1-C9C"/>
                     <constraint firstItem="AdB-5w-sbe" firstAttribute="leading" secondItem="ing-Xx-nqc" secondAttribute="leading" id="TGy-G8-8Cj"/>
                     <constraint firstItem="AdB-5w-sbe" firstAttribute="bottom" secondItem="ing-Xx-nqc" secondAttribute="bottom" id="TOw-WX-cS9"/>
                     <constraint firstItem="ing-Xx-nqc" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" id="YWP-2F-L37"/>
@@ -34,12 +80,20 @@
                     <constraint firstItem="ing-Xx-nqc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="dYZ-pY-8p7"/>
                 </constraints>
             </tableViewCellContentView>
+            <constraints>
+                <constraint firstItem="E5Q-1E-Pbj" firstAttribute="width" secondItem="KGk-i7-Jjw" secondAttribute="width" id="aQK-Kw-D0j"/>
+            </constraints>
             <connections>
                 <outlet property="imageKanbanBG" destination="AdB-5w-sbe" id="Ien-T9-2ek"/>
                 <outlet property="imageKanbanContent" destination="ing-Xx-nqc" id="Tx8-9g-91E"/>
                 <outlet property="imageKanbanContentHeight" destination="h4P-rI-keG" id="ikY-dJ-F1Y"/>
+                <outlet property="labelImageCount" destination="gx3-dO-b5d" id="8bn-9L-VF3"/>
+                <outlet property="labelTitle" destination="6hI-PH-yVt" id="vdB-vi-48Q"/>
             </connections>
             <point key="canvasLocation" x="263" y="423"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="image.png" width="276" height="276"/>
+    </resources>
 </document>

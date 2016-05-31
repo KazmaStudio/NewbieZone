@@ -12,7 +12,9 @@ class TableViewCellKanbanCellTypeA: UITableViewCell {
 
     @IBOutlet weak var imageKanbanContent: UIImageView!
     @IBOutlet weak var imageKanbanBG: UIImageView!
+    @IBOutlet weak var labelImageCount: UILabel!
     @IBOutlet weak var imageKanbanContentHeight: NSLayoutConstraint!
+    @IBOutlet weak var labelTitle: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -24,6 +26,8 @@ class TableViewCellKanbanCellTypeA: UITableViewCell {
         
         // Initialization code
     }
+    
+    
 
     override func setSelected(selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)

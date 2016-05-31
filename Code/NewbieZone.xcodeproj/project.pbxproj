@@ -13,6 +13,7 @@
 		065FCA921C294BA400264691 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 065FCA901C294BA400264691 /* LaunchScreen.storyboard */; };
 		065FCA9D1C294BA400264691 /* NewbieZoneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065FCA9C1C294BA400264691 /* NewbieZoneTests.swift */; };
 		065FCAA81C294BA400264691 /* NewbieZoneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065FCAA71C294BA400264691 /* NewbieZoneUITests.swift */; };
+		06610B1A1CFD6912000CB6DC /* image.png in Resources */ = {isa = PBXBuildFile; fileRef = 06610B191CFD6912000CB6DC /* image.png */; };
 		06AEA9A51C322FD9008ED5CF /* ModelUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06AEA9A41C322FD9008ED5CF /* ModelUser.swift */; };
 		06AEA9BD1C3271B5008ED5CF /* ModelKanban.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06AEA9BC1C3271B5008ED5CF /* ModelKanban.swift */; };
 		06AEA9DF1C328A4A008ED5CF /* UIView+XIBEdit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06AEA9DE1C328A4A008ED5CF /* UIView+XIBEdit.swift */; };
@@ -36,6 +37,8 @@
 		06AEAA241C33CD54008ED5CF /* GK6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 06AEAA1A1C33CD54008ED5CF /* GK6.jpg */; };
 		06AEAA281C33CDDD008ED5CF /* GK5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 06AEAA261C33CDDD008ED5CF /* GK5.jpg */; };
 		06AEAA291C33CDDD008ED5CF /* GK7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 06AEAA271C33CDDD008ED5CF /* GK7.jpg */; };
+		06BAAA531CFD86110094E937 /* TableViewCellKanbanCellTypeB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BAAA511CFD86110094E937 /* TableViewCellKanbanCellTypeB.swift */; };
+		06BAAA541CFD86110094E937 /* TableViewCellKanbanCellTypeB.xib in Resources */ = {isa = PBXBuildFile; fileRef = 06BAAA521CFD86110094E937 /* TableViewCellKanbanCellTypeB.xib */; };
 		06EB73121C29A5EC004E66FD /* Danjon.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06EB73111C29A5EC004E66FD /* Danjon.storyboard */; };
 		06EB73191C29A6C7004E66FD /* HentaiNeko.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06EB73181C29A6C7004E66FD /* HentaiNeko.storyboard */; };
 		06EB731B1C29A6D5004E66FD /* Kanban.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06EB731A1C29A6D5004E66FD /* Kanban.storyboard */; };
@@ -92,6 +95,7 @@
 		065FCAA31C294BA400264691 /* NewbieZoneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewbieZoneUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		065FCAA71C294BA400264691 /* NewbieZoneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewbieZoneUITests.swift; sourceTree = "<group>"; };
 		065FCAA91C294BA400264691 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		06610B191CFD6912000CB6DC /* image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image.png; sourceTree = "<group>"; };
 		06AEA9A41C322FD9008ED5CF /* ModelUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelUser.swift; sourceTree = "<group>"; };
 		06AEA9BC1C3271B5008ED5CF /* ModelKanban.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelKanban.swift; sourceTree = "<group>"; };
 		06AEA9DE1C328A4A008ED5CF /* UIView+XIBEdit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+XIBEdit.swift"; sourceTree = "<group>"; };
@@ -113,6 +117,8 @@
 		06AEAA1A1C33CD54008ED5CF /* GK6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = GK6.jpg; sourceTree = "<group>"; };
 		06AEAA261C33CDDD008ED5CF /* GK5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = GK5.jpg; sourceTree = "<group>"; };
 		06AEAA271C33CDDD008ED5CF /* GK7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = GK7.jpg; sourceTree = "<group>"; };
+		06BAAA511CFD86110094E937 /* TableViewCellKanbanCellTypeB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCellKanbanCellTypeB.swift; sourceTree = "<group>"; };
+		06BAAA521CFD86110094E937 /* TableViewCellKanbanCellTypeB.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCellKanbanCellTypeB.xib; sourceTree = "<group>"; };
 		06EB730F1C29A5D0004E66FD /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
 		06EB73101C29A5D0004E66FD /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		06EB73111C29A5EC004E66FD /* Danjon.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Danjon.storyboard; sourceTree = "<group>"; };
@@ -223,6 +229,8 @@
 			children = (
 				06AEA9E51C328BEC008ED5CF /* TableViewCellKanbanCellTypeA.swift */,
 				06AEA9E61C328BEC008ED5CF /* TableViewCellKanbanCellTypeA.xib */,
+				06BAAA511CFD86110094E937 /* TableViewCellKanbanCellTypeB.swift */,
+				06BAAA521CFD86110094E937 /* TableViewCellKanbanCellTypeB.xib */,
 			);
 			name = "Kanban Cell";
 			sourceTree = "<group>";
@@ -299,6 +307,7 @@
 		06AEA9FA1C33B234008ED5CF /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				06610B191CFD6912000CB6DC /* image.png */,
 				06AEAA111C33CD54008ED5CF /* Fake */,
 			);
 			path = Images;
@@ -481,6 +490,8 @@
 				06AEAA0E1C33BF11008ED5CF /* TableViewHeaderKanban.xib in Resources */,
 				06AEA9E81C328BEC008ED5CF /* TableViewCellKanbanCellTypeA.xib in Resources */,
 				06EB73121C29A5EC004E66FD /* Danjon.storyboard in Resources */,
+				06BAAA541CFD86110094E937 /* TableViewCellKanbanCellTypeB.xib in Resources */,
+				06610B1A1CFD6912000CB6DC /* image.png in Resources */,
 				06AEAA1F1C33CD54008ED5CF /* GK1.jpg in Resources */,
 				06AEAA201C33CD54008ED5CF /* GK2.jpg in Resources */,
 				06EB73191C29A6C7004E66FD /* HentaiNeko.storyboard in Resources */,
@@ -520,6 +531,7 @@
 				06AEA9A51C322FD9008ED5CF /* ModelUser.swift in Sources */,
 				06EB73231C29A763004E66FD /* TableViewControllerHentaiNeko.swift in Sources */,
 				06EB73221C29A763004E66FD /* NavigationControllerHentaiNeko.swift in Sources */,
+				06BAAA531CFD86110094E937 /* TableViewCellKanbanCellTypeB.swift in Sources */,
 				06EB731F1C29A754004E66FD /* ViewControllerDanjon.swift in Sources */,
 				065FCA881C294BA400264691 /* AppDelegate.swift in Sources */,
 				06AEA9E71C328BEC008ED5CF /* TableViewCellKanbanCellTypeA.swift in Sources */,

@@ -25,6 +25,8 @@ class TableViewControllerKanban: UITableViewController {
         let cellHeaderNib = UINib(nibName: "TableViewHeaderKanban", bundle: nil)
         self.tableView.registerNib(cellHeaderNib, forHeaderFooterViewReuseIdentifier: "TableViewHeaderKanban")
         
+        // MARK: - fake data
+        
         let userInfo1 = ModelUser()
         userInfo1.userID = 0
         userInfo1.userName = "番号姬"
@@ -40,10 +42,16 @@ class TableViewControllerKanban: UITableViewController {
         let kanbanInfo1 = ModelKanban()
         kanbanInfo1.kanbanUserInfo = userInfo1
         kanbanInfo1.kanbanDateTime = "2015/12/28 16:01"
+        kanbanInfo1.kanbanTitleText = "踩踩踩踩踩踩踩踩超级计算机计算机世界神经计算机熬枯受淡静安收到了卡登仕"
+        kanbanInfo1.kanbanContentImage = ["","",""]
+        kanbanInfo1.kanbanType = 0
         
         let kanbanInfo2 = ModelKanban()
         kanbanInfo2.kanbanUserInfo = userInfo2
         kanbanInfo2.kanbanDateTime = "2015/12/28 15:23"
+        kanbanInfo2.kanbanTitleText = "SOD 051"
+        kanbanInfo2.kanbanEroEmoji = ["EEK01", "EEK08", "EEK16"]
+        kanbanInfo2.kanbanType = 1
         
         kanbanList.append(kanbanInfo1)
         kanbanList.append(kanbanInfo2)
@@ -109,7 +117,10 @@ class TableViewControllerKanban: UITableViewController {
         let rate:CGFloat = ScreenWith / imageWidth
         
         cell.imageKanbanContentHeight.constant = (imageContent?.size.height)! * rate
-
+        
+        cell.labelImageCount.text = "×\(kanbanList[0].kanbanContentImage!.count)"
+        cell.labelTitle.text = kanbanList[0].kanbanTitleText
+    
         return cell
     }
     
@@ -120,7 +131,7 @@ class TableViewControllerKanban: UITableViewController {
         let imageWidth: CGFloat = (imageContent?.size.width)!
         let rate:CGFloat = ScreenWith / imageWidth
         
-        return (imageContent?.size.height)! * rate
+        return (imageContent?.size.height)! * rate + 40
     
     }
 

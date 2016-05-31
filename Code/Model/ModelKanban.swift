@@ -12,8 +12,10 @@ class ModelKanban: NSObject {
     
     var kanbanUserInfo:ModelUser!
     var kanbanDateTime:String!
+    var kanbanTitleText:String?
     var kanbanContentText:String?
-    var kanbanContentImage:String?
-    var kanbanTag:Array<String>?
+    var kanbanContentImage:Array<String>?
+    var kanbanEroEmoji:Array<String>?
+    var kanbanType:Int!
     
 }

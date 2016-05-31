@@ -26,6 +26,23 @@ extension UIView {
         }
     }
     
+    @IBInspectable var shadowOffset: CGSize {
+        
+        get {
+            
+            return layer.shadowOffset
+            
+        }
+        
+        set {
+            layer.shadowRadius = 2
+            layer.shadowOpacity = 0.3
+            layer.shadowOffset = newValue
+            layer.masksToBounds = false
+            
+        }
+    }
+    
     @IBInspectable var borderWidth: CGFloat {
         
         get {
@@ -38,7 +55,6 @@ extension UIView {
         
             layer.borderWidth = newValue
             layer.masksToBounds = newValue > 0
-        
         }
     }
     
