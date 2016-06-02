@@ -58,33 +58,5 @@ extension UIView {
         }
     }
     
-    @IBInspectable var borderBottom: Bool {
-
-        get{
-            
-            return false
-            
-        }
-
-        set {
-            
-            if(newValue){
-                
-                self.layoutSubviews();
-                
-                let bottomBorder: CALayer = CALayer()
-                
-                bottomBorder.frame = CGRect(x: 0.0, y: self.frame.height - 0.5, width: self.frame.width, height: 0.5)
-                
-                bottomBorder.backgroundColor = rgba(255, g: 255, b: 255, a: 1).CGColor
-                
-                self.layer.addSublayer(bottomBorder)
-            
-            }
-
-        }
-        
-
-    }
     
 }

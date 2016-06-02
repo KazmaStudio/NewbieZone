@@ -20,7 +20,7 @@ class NavigationControllerHentaiNeko: UINavigationController {
         tabelViewControllerHentaiNeko = storyboardKanban.instantiateViewControllerWithIdentifier("hentaiNekoTable") as! TableViewControllerHentaiNeko
         
         self.setViewControllers([tabelViewControllerHentaiNeko], animated: false)
-
+        
         // Do any additional setup after loading the view.
     }
 

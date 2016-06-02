@@ -16,7 +16,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="AdB-5w-sbe">
-                        <rect key="frame" x="0.0" y="-56" width="400" height="456"/>
+                        <rect key="frame" x="0.0" y="56" width="400" height="344"/>
                     </imageView>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ing-Xx-nqc">
                         <rect key="frame" x="0.0" y="0.0" width="400" height="400"/>
@@ -35,13 +35,13 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="×5" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gx3-dO-b5d">
-                                <rect key="frame" x="24" y="9" width="15.5" height="14.5"/>
+                                <rect key="frame" x="28" y="9" width="15.5" height="14.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6hI-PH-yVt">
-                                <rect key="frame" x="47" y="0.0" width="344.5" height="32"/>
+                                <rect key="frame" x="51" y="0.0" width="340.5" height="32"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="32" id="yqA-Hl-O84"/>
                                 </constraints>
@@ -55,7 +55,7 @@
                             <constraint firstItem="6hI-PH-yVt" firstAttribute="leading" secondItem="gx3-dO-b5d" secondAttribute="trailing" constant="8" id="5QS-bb-bSO"/>
                             <constraint firstItem="6hI-PH-yVt" firstAttribute="top" secondItem="E5Q-1E-Pbj" secondAttribute="top" id="NoG-db-x5v"/>
                             <constraint firstItem="OWg-a6-FrX" firstAttribute="centerY" secondItem="E5Q-1E-Pbj" secondAttribute="centerY" id="QBm-75-Jh9"/>
-                            <constraint firstItem="gx3-dO-b5d" firstAttribute="leading" secondItem="OWg-a6-FrX" secondAttribute="trailing" id="TU8-Gf-3X0"/>
+                            <constraint firstItem="gx3-dO-b5d" firstAttribute="leading" secondItem="OWg-a6-FrX" secondAttribute="trailing" constant="4" id="TU8-Gf-3X0"/>
                             <constraint firstAttribute="height" constant="32" id="WVJ-DL-fFS"/>
                             <constraint firstItem="gx3-dO-b5d" firstAttribute="centerY" secondItem="E5Q-1E-Pbj" secondAttribute="centerY" id="iBT-0B-fiB"/>
                             <constraint firstAttribute="trailing" secondItem="6hI-PH-yVt" secondAttribute="trailing" constant="8" id="q3i-7g-UoK"/>
@@ -71,7 +71,7 @@
                 <constraints>
                     <constraint firstItem="E5Q-1E-Pbj" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-8" id="69X-JF-ZSI"/>
                     <constraint firstItem="AdB-5w-sbe" firstAttribute="width" secondItem="ing-Xx-nqc" secondAttribute="width" id="7Mj-6F-LIu"/>
-                    <constraint firstItem="AdB-5w-sbe" firstAttribute="top" secondItem="ing-Xx-nqc" secondAttribute="top" constant="-56" id="LVd-qb-mqE"/>
+                    <constraint firstItem="AdB-5w-sbe" firstAttribute="top" secondItem="ing-Xx-nqc" secondAttribute="top" constant="56" id="LVd-qb-mqE"/>
                     <constraint firstItem="E5Q-1E-Pbj" firstAttribute="top" secondItem="ing-Xx-nqc" secondAttribute="bottom" id="REN-a1-C9C"/>
                     <constraint firstItem="AdB-5w-sbe" firstAttribute="leading" secondItem="ing-Xx-nqc" secondAttribute="leading" id="TGy-G8-8Cj"/>
                     <constraint firstItem="AdB-5w-sbe" firstAttribute="bottom" secondItem="ing-Xx-nqc" secondAttribute="bottom" id="TOw-WX-cS9"/>
@@ -94,6 +94,6 @@
         </tableViewCell>
     </objects>
     <resources>
-        <image name="image.png" width="276" height="276"/>
+        <image name="image.png" width="64" height="63"/>
     </resources>
 </document>

@@ -39,7 +39,7 @@ class TableViewHeaderKanban: UITableViewHeaderFooterView {
         }
 		
 		self.labelName.text = userInfo.userName
-		self.labelTitle.text = "&" + userInfo.userTitle!
+		self.labelTitle.text = userInfo.userTitle!
 		
 		// userInfo.userAvatar: String = nil
 		//self.imageAvatar.image = UIImage.init(named: userInfo.userAvatar!) // crash

@@ -9,7 +9,10 @@
 import UIKit
 
 class TableViewCellKanbanCellTypeB: UITableViewCell {
+    @IBOutlet weak var lableTitle: UILabel!
 
+    @IBOutlet weak var labelSubTitle: UILabel!
+    @IBOutlet weak var labelContent: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
