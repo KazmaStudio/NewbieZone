@@ -8,6 +8,10 @@
 
 import UIKit
 
+// MARK: - Tag number
+var TagCellHighlightView = 99901
+
+// MARK: - Define
 let ScreenWith = UIScreen.mainScreen().bounds.width
 
 let ScreenHeight = UIScreen.mainScreen().bounds.height
@@ -22,6 +26,7 @@ var ScreenScale = UIScreen.mainScreen().scale;
 
 var px1 = 1 / ScreenScale
 
+// MARK: - Function
 func ShakeView(view : UIView){
     let shake = CABasicAnimation.init(keyPath: "position")
     shake.duration = 0.1
@@ -32,10 +37,8 @@ func ShakeView(view : UIView){
     view.layer.addAnimation(shake, forKey: "position")
 }
 
-var TagCellHighlightView = 99901
-
 func CellShouldHighlightAnimate(cell : UITableViewCell){
-    let view = UIView.init(frame: frame(0, y: 0, w: cell.frame.size.width, h: cell.frame.size.height))
+    let view = UIView.init(frame: frame(0, y: 0, w: cell.frame.size.width, h: cell.frame.size.height - 8))
     view.backgroundColor = rgba(0, g: 0, b: 0, a: 0)
     view.tag = TagCellHighlightView
     cell.contentView.addSubview(view)

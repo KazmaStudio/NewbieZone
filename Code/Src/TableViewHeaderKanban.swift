@@ -20,16 +20,10 @@ class TableViewHeaderKanban: UITableViewHeaderFooterView {
     
     @IBOutlet weak var labelTitle: UILabel!
     
-    @IBOutlet weak var labelSub: UILabel!
-    
+    @IBOutlet weak var imageKanbanBGBlurViewLight: UIVisualEffectView!
+
     override func drawRect(rect: CGRect) {
         
-        let blurEffectLight = UIBlurEffect(style: UIBlurEffectStyle.ExtraLight)
-        let imageKanbanBGBlurViewLight = UIVisualEffectView(effect: blurEffectLight)
-        imageKanbanBGBlurViewLight.frame = CGRectMake(0, 0, ScreenWith, 56.0)
-        viewBG.addSubview(imageKanbanBGBlurViewLight)
-        
-        viewBG.bringSubviewToFront(viewUserInfo)
     }
 	
 	func setUserInfo(userInfo: ModelUser) {

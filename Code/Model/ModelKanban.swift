@@ -15,7 +15,7 @@ class ModelKanban: NSObject {
     var kanbanTitleText:String?
     var kanbanSubTitleText:String?
     var kanbanContentText:String?
-    var kanbanContentImage:Array<String>?
+    var kanbanContentImage:Array<ModelImage>?
     var kanbanEroEmoji:Array<String>?
     var kanbanType:Int!
     var kanbanHasDetail:Bool!

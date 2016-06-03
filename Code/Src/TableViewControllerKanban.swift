@@ -8,6 +8,8 @@
 
 import UIKit
 
+import Kingfisher
+
 class TableViewControllerKanban: UITableViewController {
     
     private var kanbanList:Array<ModelKanban> = []
@@ -41,12 +43,27 @@ class TableViewControllerKanban: UITableViewController {
 		userInfo2.userName = "番号姬"
 		userInfo2.userTitle = "新手村NPC"
 		userInfo2.userAvatar = "girl.png"
+        
+        let imageInfo1 = ModelImage()
+        imageInfo1.imageName = "GK0.jpg"
+        imageInfo1.width = 1200
+        imageInfo1.height = 1636
+        
+        let imageInfo2 = ModelImage()
+        imageInfo2.imageName = "GK1.jpg"
+        imageInfo2.width = 4000
+        imageInfo2.height = 2248
+        
+        let imageInfo3 = ModelImage()
+        imageInfo3.imageName = "GK2.jpg"
+        imageInfo3.width = 994
+        imageInfo3.height = 1492
 		
         let kanbanInfo1 = ModelKanban()
         kanbanInfo1.kanbanUserInfo = userInfo1
         kanbanInfo1.kanbanDateTime = "2015/12/28 16:01"
         kanbanInfo1.kanbanTitleText = "踩踩踩踩踩踩踩踩超级计算机计算机世界神经计算机熬枯受淡静安收到了卡登仕"
-        kanbanInfo1.kanbanContentImage = ["GK1.jpg","GK2.jpg","GK3.jpg"]
+        kanbanInfo1.kanbanContentImage = [imageInfo1, imageInfo2, imageInfo3]
         kanbanInfo1.kanbanType = 0
         kanbanInfo1.kanbanHasDetail = true
         
@@ -63,7 +80,7 @@ class TableViewControllerKanban: UITableViewController {
         kanbanInfo3.kanbanUserInfo = userInfo1
         kanbanInfo3.kanbanDateTime = "2015/12/28 16:01"
         kanbanInfo3.kanbanTitleText = "踩踩踩踩踩踩踩踩超级计算机计算机世界神经计算机熬枯受淡静安收到了卡登仕"
-        kanbanInfo3.kanbanContentImage = ["GK2.jpg","GK3.jpg"]
+        kanbanInfo3.kanbanContentImage = [imageInfo2, imageInfo3]
         kanbanInfo3.kanbanType = 0
         kanbanInfo3.kanbanHasDetail = true
         
@@ -121,17 +138,14 @@ class TableViewControllerKanban: UITableViewController {
             
             cell.selectionStyle = UITableViewCellSelectionStyle.None
             
-            let imageContent = UIImage.init(named: modelKanban.kanbanContentImage![0])
+            cell.imageKanbanBG!.kf_setImageWithURL(NSURL(string: qiniuResourceImageURL + modelKanban.kanbanContentImage![0].imageName)!)
             
-            guard imageContent != nil else{return cell}
-            
-            cell.imageKanbanContent!.image = imageContent
-            cell.imageKanbanBG!.image = imageContent
-            
-            let imageWidth: CGFloat = (imageContent?.size.width)!
+            cell.imageKanbanContent!.kf_setImageWithURL(NSURL(string: qiniuResourceImageURL + modelKanban.kanbanContentImage![0].imageName)!)
+
+            let imageWidth: CGFloat = modelKanban.kanbanContentImage![0].width
             let rate:CGFloat = ScreenWith / imageWidth
             
-            cell.imageKanbanContentHeight.constant = (imageContent?.size.height)! * rate
+            cell.imageKanbanContentHeight.constant = (modelKanban.kanbanContentImage![0].height)! * rate
             
             cell.labelImageCount.text = "×\(modelKanban.kanbanContentImage!.count)"
             cell.labelTitle.text = modelKanban.kanbanTitleText
@@ -172,13 +186,11 @@ class TableViewControllerKanban: UITableViewController {
         let modelKanban = kanbanList[indexPath.section]
         
         if (modelKanban.kanbanType == 0){
-            
-            let imageContent = UIImage.init(named: modelKanban.kanbanContentImage![0])
         
-            let imageWidth: CGFloat = (imageContent?.size.width)!
+            let imageWidth: CGFloat = modelKanban.kanbanContentImage![0].width
             let rate:CGFloat = ScreenWith / imageWidth
         
-            return (imageContent?.size.height)! * rate + 40
+            return (modelKanban.kanbanContentImage![0].height)! * rate + 40
             
         }else if (modelKanban.kanbanType == 1){
             

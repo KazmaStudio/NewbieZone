@@ -16,7 +16,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="AdB-5w-sbe">
-                        <rect key="frame" x="0.0" y="56" width="400" height="344"/>
+                        <rect key="frame" x="0.0" y="-48" width="400" height="448"/>
                     </imageView>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ing-Xx-nqc">
                         <rect key="frame" x="0.0" y="0.0" width="400" height="400"/>
@@ -72,6 +72,7 @@
                     <constraint firstItem="E5Q-1E-Pbj" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-8" id="69X-JF-ZSI"/>
                     <constraint firstItem="AdB-5w-sbe" firstAttribute="width" secondItem="ing-Xx-nqc" secondAttribute="width" id="7Mj-6F-LIu"/>
                     <constraint firstItem="AdB-5w-sbe" firstAttribute="top" secondItem="ing-Xx-nqc" secondAttribute="top" constant="56" id="LVd-qb-mqE"/>
+                    <constraint firstItem="AdB-5w-sbe" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-56" id="OHk-uE-T2K"/>
                     <constraint firstItem="E5Q-1E-Pbj" firstAttribute="top" secondItem="ing-Xx-nqc" secondAttribute="bottom" id="REN-a1-C9C"/>
                     <constraint firstItem="AdB-5w-sbe" firstAttribute="leading" secondItem="ing-Xx-nqc" secondAttribute="leading" id="TGy-G8-8Cj"/>
                     <constraint firstItem="AdB-5w-sbe" firstAttribute="bottom" secondItem="ing-Xx-nqc" secondAttribute="bottom" id="TOw-WX-cS9"/>
@@ -79,6 +80,11 @@
                     <constraint firstItem="ing-Xx-nqc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="cau-14-FfU"/>
                     <constraint firstItem="ing-Xx-nqc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="dYZ-pY-8p7"/>
                 </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="LVd-qb-mqE"/>
+                    </mask>
+                </variation>
             </tableViewCellContentView>
             <constraints>
                 <constraint firstItem="E5Q-1E-Pbj" firstAttribute="width" secondItem="KGk-i7-Jjw" secondAttribute="width" id="aQK-Kw-D0j"/>
