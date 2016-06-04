@@ -138,10 +138,9 @@ class TableViewControllerKanban: UITableViewController {
             
             cell.selectionStyle = UITableViewCellSelectionStyle.None
             
-            cell.imageKanbanBG!.kf_setImageWithURL(NSURL(string: qiniuResourceImageURL + modelKanban.kanbanContentImage![0].imageName)!)
+            cell.imageKanbanBG.image = nil
+            cell.imageKanbanContent.image = nil
             
-            cell.imageKanbanContent!.kf_setImageWithURL(NSURL(string: qiniuResourceImageURL + modelKanban.kanbanContentImage![0].imageName)!)
-
             let imageWidth: CGFloat = modelKanban.kanbanContentImage![0].width
             let rate:CGFloat = ScreenWith / imageWidth
             
@@ -149,7 +148,20 @@ class TableViewControllerKanban: UITableViewController {
             
             cell.labelImageCount.text = "×\(modelKanban.kanbanContentImage!.count)"
             cell.labelTitle.text = modelKanban.kanbanTitleText
-            
+
+            cell.imageKanbanContent.kf_setImageWithURL(NSURL(string: qiniuResourceImageURL + modelKanban.kanbanContentImage![0].imageName)!,
+                                                       placeholderImage: nil,
+                                                       optionsInfo: [.Transition(.Fade(0.6))],
+                                                       progressBlock: { (receivedSize, totalSize) -> () in
+
+                },
+                                                       completionHandler: { (image, error, cacheType, imageURL) -> () in
+                                                        
+                                                        cell.imageKanbanBG.image = image
+                                                       
+                }
+            )
+
             return cell
             
         }else if (modelKanban.kanbanType == 1){
