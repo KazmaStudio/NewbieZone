@@ -13,6 +13,9 @@ class TableViewCellKanbanCellTypeB: UITableViewCell {
 
     @IBOutlet weak var labelSubTitle: UILabel!
     @IBOutlet weak var labelContent: UILabel!
+	
+	static let fontSizeLabelSubTitle: CGFloat = 32
+	
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -23,5 +26,13 @@ class TableViewCellKanbanCellTypeB: UITableViewCell {
 
         // Configure the view for the selected state
     }
+	
+	static func getWidthLabelSubTitle () -> CGFloat{
+		return ScreenWith - 16
+	}
+	
+	static func getHeightForCell (heightLabel: CGFloat) -> CGFloat{
+		return 8 + 64 - 8 + 21 + 8 + heightLabel + 8 + 16
+	}
     
 }

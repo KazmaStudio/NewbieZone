@@ -34,5 +34,13 @@ class TableViewCellKanbanCellTypeA: UITableViewCell {
 
         // Configure the view for the selected state
     }
+	
+	static func getHeightForCell (sizeImage : CGSize) -> CGFloat{
+
+		let imageWidth: CGFloat = sizeImage.width
+		let rate:CGFloat = ScreenWith / imageWidth
+		return (sizeImage.height) * rate + 40
+
+	}
     
 }

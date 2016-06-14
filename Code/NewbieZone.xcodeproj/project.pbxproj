@@ -38,6 +38,8 @@
 		06BAAA531CFD86110094E937 /* TableViewCellKanbanCellTypeB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BAAA511CFD86110094E937 /* TableViewCellKanbanCellTypeB.swift */; };
 		06BAAA541CFD86110094E937 /* TableViewCellKanbanCellTypeB.xib in Resources */ = {isa = PBXBuildFile; fileRef = 06BAAA521CFD86110094E937 /* TableViewCellKanbanCellTypeB.xib */; };
 		06D1056D1D0141ED00399896 /* ModelImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D1056C1D0141ED00399896 /* ModelImage.swift */; };
+		06E6B0CE1D104507005A7A45 /* TableViewCellKanbanCellTypeC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E6B0CC1D104507005A7A45 /* TableViewCellKanbanCellTypeC.swift */; };
+		06E6B0CF1D104507005A7A45 /* TableViewCellKanbanCellTypeC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 06E6B0CD1D104507005A7A45 /* TableViewCellKanbanCellTypeC.xib */; };
 		06EB73121C29A5EC004E66FD /* Danjon.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06EB73111C29A5EC004E66FD /* Danjon.storyboard */; };
 		06EB73191C29A6C7004E66FD /* HentaiNeko.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06EB73181C29A6C7004E66FD /* HentaiNeko.storyboard */; };
 		06EB731B1C29A6D5004E66FD /* Kanban.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06EB731A1C29A6D5004E66FD /* Kanban.storyboard */; };
@@ -118,6 +120,8 @@
 		06BAAA511CFD86110094E937 /* TableViewCellKanbanCellTypeB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCellKanbanCellTypeB.swift; sourceTree = "<group>"; };
 		06BAAA521CFD86110094E937 /* TableViewCellKanbanCellTypeB.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCellKanbanCellTypeB.xib; sourceTree = "<group>"; };
 		06D1056C1D0141ED00399896 /* ModelImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelImage.swift; sourceTree = "<group>"; };
+		06E6B0CC1D104507005A7A45 /* TableViewCellKanbanCellTypeC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCellKanbanCellTypeC.swift; sourceTree = "<group>"; };
+		06E6B0CD1D104507005A7A45 /* TableViewCellKanbanCellTypeC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCellKanbanCellTypeC.xib; sourceTree = "<group>"; };
 		06EB730F1C29A5D0004E66FD /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
 		06EB73101C29A5D0004E66FD /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		06EB73111C29A5EC004E66FD /* Danjon.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Danjon.storyboard; sourceTree = "<group>"; };
@@ -229,6 +233,8 @@
 				06AEA9E61C328BEC008ED5CF /* TableViewCellKanbanCellTypeA.xib */,
 				06BAAA511CFD86110094E937 /* TableViewCellKanbanCellTypeB.swift */,
 				06BAAA521CFD86110094E937 /* TableViewCellKanbanCellTypeB.xib */,
+				06E6B0CC1D104507005A7A45 /* TableViewCellKanbanCellTypeC.swift */,
+				06E6B0CD1D104507005A7A45 /* TableViewCellKanbanCellTypeC.xib */,
 			);
 			name = "Kanban Cell";
 			sourceTree = "<group>";
@@ -493,6 +499,7 @@
 				06610B1A1CFD6912000CB6DC /* image.png in Resources */,
 				06AEAA1F1C33CD54008ED5CF /* GK1.jpg in Resources */,
 				06AEAA201C33CD54008ED5CF /* GK2.jpg in Resources */,
+				06E6B0CF1D104507005A7A45 /* TableViewCellKanbanCellTypeC.xib in Resources */,
 				06EB73191C29A6C7004E66FD /* HentaiNeko.storyboard in Resources */,
 				06AEAA281C33CDDD008ED5CF /* GK5.jpg in Resources */,
 				065FCA8D1C294BA400264691 /* Main.storyboard in Resources */,
@@ -534,6 +541,7 @@
 				06EB731F1C29A754004E66FD /* ViewControllerDanjon.swift in Sources */,
 				065FCA881C294BA400264691 /* AppDelegate.swift in Sources */,
 				06AEA9E71C328BEC008ED5CF /* TableViewCellKanbanCellTypeA.swift in Sources */,
+				06E6B0CE1D104507005A7A45 /* TableViewCellKanbanCellTypeC.swift in Sources */,
 				06AEA9F21C3378F6008ED5CF /* UICommon.swift in Sources */,
 				06D1056D1D0141ED00399896 /* ModelImage.swift in Sources */,
 			);

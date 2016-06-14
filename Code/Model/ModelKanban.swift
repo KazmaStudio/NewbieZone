@@ -17,7 +17,14 @@ class ModelKanban: NSObject {
     var kanbanContentText:String?
     var kanbanContentImage:Array<ModelImage>?
     var kanbanEroEmoji:Array<String>?
-    var kanbanType:Int!
+	var kanbanType: KanbanType = .TypeA
     var kanbanHasDetail:Bool!
-    
+	
+	enum KanbanType {
+		case TypeA
+		case TypeB
+		case TypeC
+		case TypeD
+	}
+	
 }
