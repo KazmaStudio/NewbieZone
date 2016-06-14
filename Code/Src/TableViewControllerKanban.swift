@@ -45,7 +45,7 @@ class TableViewControllerKanban: UITableViewController {
 		userInfo2.userID = 1
 		userInfo2.userName = "番号姬"
 		userInfo2.userTitle = "新手村NPC"
-		userInfo2.userAvatar = "girl.png"
+		userInfo2.userAvatar = "avatar2.jpg"
 		
 		let imageInfo1 = ModelImage()
 		imageInfo1.imageName = "GK0.jpg"
