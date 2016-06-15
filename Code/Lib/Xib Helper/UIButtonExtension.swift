@@ -26,4 +26,8 @@ extension UIButton {
     func setBackgroundColor(color: UIColor, forUIControlState state: UIControlState) {
         self.setBackgroundImage(imageWithColor(color), forState: state)
     }
+	
+	func addGrayHighlightEffect()  {
+		self.setBackgroundColor(rgba(0, g: 0, b: 0, a: 0.3), forUIControlState: .Highlighted)
+	}
 }
