@@ -203,10 +203,8 @@ class TableViewControllerKanban: UITableViewController {
 			
 			let cell = tableView.dequeueReusableCellWithIdentifier("TableViewCellKanbanCellTypeC", forIndexPath: indexPath) as! TableViewCellKanbanCellTypeC
 			
-			cell.selectionStyle = UITableViewCellSelectionStyle.None
-			
-			cell.labelContent.text = modelKanban.kanbanContentText
-			
+			cell.loadData(modelKanban)
+            
 			return cell
 			
 		default:
@@ -255,7 +253,7 @@ class TableViewControllerKanban: UITableViewController {
 			labelFake.text = modelKanban.kanbanContentText
 			labelFake.sizeToFit()
 			
-			return TableViewCellKanbanCellTypeC.getHeightForCell(labelFake.frame.size.height)
+			return TableViewCellKanbanCellTypeC.getHeightForCell(labelFake.frame.size.height, countImage: modelKanban.kanbanContentImage!.count)
 			
 		default:
 			
@@ -295,6 +293,7 @@ class TableViewControllerKanban: UITableViewController {
 			CellDidUnHighlightAnimate(cell!)
 		}
 	}
-	
+    
+    	
 	
 }

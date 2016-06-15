@@ -26,6 +26,8 @@ var ScreenScale = UIScreen.mainScreen().scale;
 
 var px1 = 1 / ScreenScale
 
+var MarginDefault: CGFloat = 8
+
 // MARK: - Function
 func ShakeView(view : UIView){
     let shake = CABasicAnimation.init(keyPath: "position")

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0615FB101D11269F00C3D888 /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0615FB0F1D11269F00C3D888 /* UIButtonExtension.swift */; };
 		065FCA881C294BA400264691 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065FCA871C294BA400264691 /* AppDelegate.swift */; };
 		065FCA8D1C294BA400264691 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 065FCA8B1C294BA400264691 /* Main.storyboard */; };
 		065FCA8F1C294BA400264691 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 065FCA8E1C294BA400264691 /* Assets.xcassets */; };
@@ -84,6 +85,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0615FB0F1D11269F00C3D888 /* UIButtonExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
 		065FCA841C294BA400264691 /* NewbieZone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewbieZone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		065FCA871C294BA400264691 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		065FCA8C1C294BA400264691 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -290,6 +292,7 @@
 			children = (
 				06AEA9DE1C328A4A008ED5CF /* UIView+XIBEdit.swift */,
 				06AEA9F11C3378F6008ED5CF /* UICommon.swift */,
+				0615FB0F1D11269F00C3D888 /* UIButtonExtension.swift */,
 			);
 			name = "UI Common";
 			path = "Xib Helper";
@@ -536,6 +539,7 @@
 				06AEA9F51C33AA60008ED5CF /* Common.swift in Sources */,
 				06AEAA0C1C33BEF9008ED5CF /* TableViewHeaderKanban.swift in Sources */,
 				06EB73261C29A76C004E66FD /* NavigationControllerKanban.swift in Sources */,
+				0615FB101D11269F00C3D888 /* UIButtonExtension.swift in Sources */,
 				06EB731E1C29A754004E66FD /* NavigationControllerDanjon.swift in Sources */,
 				06EB73271C29A76C004E66FD /* TableViewControllerKanban.swift in Sources */,
 				06AEA9A51C322FD9008ED5CF /* ModelUser.swift in Sources */,
