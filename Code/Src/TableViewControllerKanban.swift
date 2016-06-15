@@ -61,6 +61,26 @@ class TableViewControllerKanban: UITableViewController {
 		imageInfo3.imageName = "GK2.jpg"
 		imageInfo3.width = 994
 		imageInfo3.height = 1492
+        
+        let imageInfo4 = ModelImage()
+        imageInfo4.imageName = "GK3.jpg"
+        imageInfo4.width = 1902
+        imageInfo4.height = 1080
+        
+        let imageInfo5 = ModelImage()
+        imageInfo5.imageName = "GK4.jpg"
+        imageInfo5.width = 800
+        imageInfo5.height = 1200
+        
+        let imageInfo6 = ModelImage()
+        imageInfo6.imageName = "GK5.jpg"
+        imageInfo6.width = 2896
+        imageInfo6.height = 1816
+        
+        let imageInfo7 = ModelImage()
+        imageInfo7.imageName = "GK6.jpg"
+        imageInfo7.width = 1000
+        imageInfo7.height = 1398
 		
 		let kanbanInfo1 = ModelKanban()
 		kanbanInfo1.kanbanUserInfo = userInfo1
@@ -94,15 +114,47 @@ class TableViewControllerKanban: UITableViewController {
 		kanbanInfo4.kanbanContentImage = [imageInfo2, imageInfo3]
 		kanbanInfo4.kanbanType = .TypeC
 		kanbanInfo4.kanbanHasDetail = true
+        
+        let kanbanInfo5 = ModelKanban()
+        kanbanInfo5.kanbanUserInfo = userInfo1
+        kanbanInfo5.kanbanDateTime = "2015/12/28 16:01"
+        kanbanInfo5.kanbanContentText = "这是个通用的Cell形式这是个通用的Cell形式这是个通用的Cell形式这是个通用的Cell形式这是个通用的Cell形式这是个通用的Cell形式"
+        kanbanInfo5.kanbanContentImage = [imageInfo4]
+        kanbanInfo5.kanbanType = .TypeC
+        kanbanInfo5.kanbanHasDetail = true
+        
+        let kanbanInfo6 = ModelKanban()
+        kanbanInfo6.kanbanUserInfo = userInfo1
+        kanbanInfo6.kanbanDateTime = "2015/12/28 16:01"
+        kanbanInfo6.kanbanContentText = "这是个通用的Cell形式这是个通用的Cell形式这是个通用的Cell形式这是个通用的Cell形式这是个通用的Cell形式这是个通用的Cell形式"
+        kanbanInfo6.kanbanContentImage = [imageInfo6, imageInfo7, imageInfo5]
+        kanbanInfo6.kanbanType = .TypeC
+        kanbanInfo6.kanbanHasDetail = true
+        
+        let kanbanInfo7 = ModelKanban()
+        kanbanInfo7.kanbanUserInfo = userInfo1
+        kanbanInfo7.kanbanDateTime = "2015/12/28 16:01"
+        kanbanInfo7.kanbanContentText = "这是个通用的Cell形式这是个通用的Cell形式这是个通用的Cell形式这是个通用的Cell形式这是个通用的Cell形式这是个通用的Cell形式"
+        kanbanInfo7.kanbanContentImage = [imageInfo6, imageInfo7, imageInfo5, imageInfo1]
+        kanbanInfo7.kanbanType = .TypeC
+        kanbanInfo7.kanbanHasDetail = true
+        
+        let kanbanInfo8 = ModelKanban()
+        kanbanInfo8.kanbanUserInfo = userInfo1
+        kanbanInfo8.kanbanDateTime = "2015/12/28 16:01"
+        kanbanInfo8.kanbanContentText = "这是个通用的Cell形式这是个通用的Cell形式这是个通用的Cell形式这是个通用的Cell形式这是个通用的Cell形式这是个通用的Cell形式"
+        kanbanInfo8.kanbanContentImage = [imageInfo6, imageInfo7, imageInfo5, imageInfo1, imageInfo2]
+        kanbanInfo8.kanbanType = .TypeC
+        kanbanInfo8.kanbanHasDetail = true
 		
 		kanbanList.append(kanbanInfo1)
 		kanbanList.append(kanbanInfo2)
 		kanbanList.append(kanbanInfo3)
 		kanbanList.append(kanbanInfo4)
-		kanbanList.append(kanbanInfo2)
-		kanbanList.append(kanbanInfo1)
-		kanbanList.append(kanbanInfo1)
-		kanbanList.append(kanbanInfo1)
+		kanbanList.append(kanbanInfo5)
+		kanbanList.append(kanbanInfo6)
+		kanbanList.append(kanbanInfo7)
+		kanbanList.append(kanbanInfo8)
 		
 		// Uncomment the following line to preserve selection between presentations
 		// self.clearsSelectionOnViewWillAppear = false
