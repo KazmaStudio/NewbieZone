@@ -352,7 +352,52 @@ class TableViewCellKanbanCellTypeC: UITableViewCell {
             viewTarget.addSubview(button4)
             viewTarget.addSubview(button5)
 
-		//case 6:
+		case 6:
+            let button1 = UIButton.init(frame: CGRectMake(MarginDefault, MarginDefault, (ScreenWith - 4 * MarginDefault) / 3, (ScreenWith - 4 * MarginDefault) / 3))
+            button1.cornerRadius = 4
+            button1.imageView?.contentMode = .ScaleAspectFill
+            button1.kf_setImageWithURL(NSURL(string: qiniuResourceImageURL + arrayImage[0].imageName)!,
+                                       forState: .Normal,
+                                       placeholderImage: nil,
+                                       optionsInfo: [.Transition(.Fade(0.6))],
+                                       progressBlock: { (receivedSize, totalSize) -> () in
+                                        
+                },
+                                       completionHandler: { (image, error, cacheType, imageURL) -> () in
+                                        
+            })
+            button1.addGrayHighlightEffect()
+            
+            let button2 = UIButton.init(frame: CGRectMake(MarginDefault + (ScreenWith - 4 * MarginDefault) / 3 + MarginDefault, MarginDefault, (ScreenWith - 4 * MarginDefault) / 3, (ScreenWith - 4 * MarginDefault) / 3))
+            button2.cornerRadius = 4
+            button2.imageView?.contentMode = .ScaleAspectFill
+            button2.kf_setImageWithURL(NSURL(string: qiniuResourceImageURL + arrayImage[1].imageName)!,
+                                       forState: .Normal,
+                                       placeholderImage: nil,
+                                       optionsInfo: [.Transition(.Fade(0.6))],
+                                       progressBlock: { (receivedSize, totalSize) -> () in
+                                        
+                },
+                                       completionHandler: { (image, error, cacheType, imageURL) -> () in
+                                        
+            })
+            button2.addGrayHighlightEffect()
+            
+            let button3 = UIButton.init(frame: CGRectMake(MarginDefault + (ScreenWith - 4 * MarginDefault) / 3 + MarginDefault + (ScreenWith - 4 * MarginDefault) / 3 + MarginDefault, MarginDefault, (ScreenWith - 4 * MarginDefault) / 3, (ScreenWith - 4 * MarginDefault) / 3))
+            button3.cornerRadius = 4
+            button3.imageView?.contentMode = .ScaleAspectFill
+            button3.kf_setImageWithURL(NSURL(string: qiniuResourceImageURL + arrayImage[2].imageName)!,
+                                       forState: .Normal,
+                                       placeholderImage: nil,
+                                       optionsInfo: [.Transition(.Fade(0.6))],
+                                       progressBlock: { (receivedSize, totalSize) -> () in
+                                        
+                },
+                                       completionHandler: { (image, error, cacheType, imageURL) -> () in
+                                        
+            })
+            button3.addGrayHighlightEffect()
+            
 			
         default:
             break

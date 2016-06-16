@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0615FB101D11269F00C3D888 /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0615FB0F1D11269F00C3D888 /* UIButtonExtension.swift */; };
+		0615FB171D1279E300C3D888 /* blank.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0615FB161D1279E300C3D888 /* blank.wav */; };
 		065FCA881C294BA400264691 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065FCA871C294BA400264691 /* AppDelegate.swift */; };
 		065FCA8D1C294BA400264691 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 065FCA8B1C294BA400264691 /* Main.storyboard */; };
 		065FCA8F1C294BA400264691 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 065FCA8E1C294BA400264691 /* Assets.xcassets */; };
@@ -86,6 +87,7 @@
 
 /* Begin PBXFileReference section */
 		0615FB0F1D11269F00C3D888 /* UIButtonExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
+		0615FB161D1279E300C3D888 /* blank.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = blank.wav; sourceTree = "<group>"; };
 		065FCA841C294BA400264691 /* NewbieZone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewbieZone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		065FCA871C294BA400264691 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		065FCA8C1C294BA400264691 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -165,6 +167,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0615FB131D1276DD00C3D888 /* Sound */ = {
+			isa = PBXGroup;
+			children = (
+				0615FB161D1279E300C3D888 /* blank.wav */,
+			);
+			path = Sound;
+			sourceTree = "<group>";
+		};
 		065FCA7B1C294BA400264691 = {
 			isa = PBXGroup;
 			children = (
@@ -309,6 +319,7 @@
 		06AEA9F91C33B234008ED5CF /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				0615FB131D1276DD00C3D888 /* Sound */,
 				06AEA9FA1C33B234008ED5CF /* Images */,
 			);
 			path = Resource;
@@ -493,6 +504,7 @@
 				06AEAA1D1C33CD54008ED5CF /* girl.png in Resources */,
 				065FCA921C294BA400264691 /* LaunchScreen.storyboard in Resources */,
 				06AEAA241C33CD54008ED5CF /* GK6.jpg in Resources */,
+				0615FB171D1279E300C3D888 /* blank.wav in Resources */,
 				06AEAA1E1C33CD54008ED5CF /* GK0.jpg in Resources */,
 				06EB731B1C29A6D5004E66FD /* Kanban.storyboard in Resources */,
 				06E6B0D11D105A45005A7A45 /* avatar2.jpg in Resources */,

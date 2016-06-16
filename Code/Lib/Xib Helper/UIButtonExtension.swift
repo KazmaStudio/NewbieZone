@@ -9,6 +9,9 @@
 import UIKit
 
 extension UIButton {
+    
+    //public var addCFEffect : Bool = false
+    
     private func imageWithColor(color: UIColor) -> UIImage {
         let rect = CGRectMake(0.0, 0.0, 1.0, 1.0)
         UIGraphicsBeginImageContext(rect.size)
@@ -30,4 +33,28 @@ extension UIButton {
 	func addGrayHighlightEffect()  {
 		self.setBackgroundColor(rgba(0, g: 0, b: 0, a: 0.3), forUIControlState: .Highlighted)
 	}
+    
+//    override public var highlighted: Bool {
+//        didSet {
+//            if highlighted {
+//                
+//               // if addCFEffect {
+////                    
+////                }else{
+////                    
+////                }
+//                
+//            } else {
+//                
+////                if addCFEffect {
+////                    
+////                }else{
+////                    
+////                }
+//                
+//            }
+//        }
+//    }
+    
+    
 }
