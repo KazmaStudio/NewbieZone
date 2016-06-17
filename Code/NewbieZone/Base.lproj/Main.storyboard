@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="MBk-0R-unW">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="MBk-0R-unW">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -16,8 +16,8 @@
                     </tabBar>
                     <connections>
                         <segue destination="1Jz-3o-bZR" kind="relationship" relationship="viewControllers" id="360-tf-dkQ"/>
-                        <segue destination="qev-wH-eOu" kind="relationship" relationship="viewControllers" id="4iX-oA-ueO"/>
-                        <segue destination="3tM-Ue-rAE" kind="relationship" relationship="viewControllers" id="2rT-Eg-bBm"/>
+                        <segue destination="yPY-os-4UR" kind="relationship" relationship="viewControllers" id="eUa-tP-YfQ"/>
+                        <segue destination="3tM-Ue-rAE" kind="relationship" relationship="viewControllers" id="7cW-j5-vTW"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C4s-tF-dhf" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -57,7 +57,7 @@
         <!--地下城-->
         <scene sceneID="7YT-OV-4R3">
             <objects>
-                <navigationController id="qev-wH-eOu" customClass="NavigationControllerDanjon" customModule="NewbieZone" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="NavigationControllerDanjon" id="qev-wH-eOu" customClass="NavigationControllerDanjon" customModule="NewbieZone" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="地下城" id="bOc-UZ-pc1">
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-8"/>
                     </tabBarItem>
@@ -69,6 +69,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KsI-T2-5pr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-446" y="-241"/>
+        </scene>
+        <!--预告-->
+        <scene sceneID="wUU-BZ-GKS">
+            <objects>
+                <navigationController id="yPY-os-4UR" customClass="NavigationControllerPreview" customModule="NewbieZone" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="预告" id="YGb-AP-6gz">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-8"/>
+                    </tabBarItem>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="oFf-0X-W1X">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2a9-Ar-3hl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1358" y="214"/>
         </scene>
         <!--我的-->
         <scene sceneID="hm6-2a-3YK">

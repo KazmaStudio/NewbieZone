@@ -1,24 +1,24 @@
 //
-//  NavigationControllerKanban.swift
-//  newbiezone
+//  NavigationControllerPreview.swift
+//  NewbieZone
 //
-//  Created by zhaochenjun on 15/12/22.
-//  Copyright © 2015年 kazmastudio. All rights reserved.
+//  Created by zhaochenjun on 16/6/17.
+//  Copyright © 2016年 kazmastudio. All rights reserved.
 //
 
 import UIKit
 
-class NavigationControllerKanban: UINavigationController {
+class NavigationControllerPreview: UINavigationController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        var storyboard: UIStoryboard
-        storyboard = UIStoryboard.init(name: "Kanban", bundle: nil)
-        
-        var viewController: TableViewControllerKanban
-        viewController = storyboard.instantiateViewControllerWithIdentifier("kanbanTable") as! TableViewControllerKanban
 
+        var storyboard: UIStoryboard
+        storyboard = UIStoryboard.init(name: "Preview", bundle: nil)
+        
+        var viewController: TableViewControllerPreview
+        viewController = storyboard.instantiateViewControllerWithIdentifier("previewTable") as! TableViewControllerPreview
+        
         self.setViewControllers([viewController], animated: false)
         // Do any additional setup after loading the view.
     }

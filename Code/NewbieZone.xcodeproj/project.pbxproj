@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		0615FB101D11269F00C3D888 /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0615FB0F1D11269F00C3D888 /* UIButtonExtension.swift */; };
 		0615FB171D1279E300C3D888 /* blank.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0615FB161D1279E300C3D888 /* blank.wav */; };
+		0615FB1A1D13ECE600C3D888 /* NavigationControllerPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0615FB191D13ECE600C3D888 /* NavigationControllerPreview.swift */; };
+		0615FB1C1D13ED0300C3D888 /* Preview.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0615FB1B1D13ED0300C3D888 /* Preview.storyboard */; };
+		0615FB1E1D13EDF900C3D888 /* TableViewControllerPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0615FB1D1D13EDF900C3D888 /* TableViewControllerPreview.swift */; };
 		065FCA881C294BA400264691 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065FCA871C294BA400264691 /* AppDelegate.swift */; };
 		065FCA8D1C294BA400264691 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 065FCA8B1C294BA400264691 /* Main.storyboard */; };
 		065FCA8F1C294BA400264691 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 065FCA8E1C294BA400264691 /* Assets.xcassets */; };
@@ -18,6 +21,10 @@
 		06610B1A1CFD6912000CB6DC /* image.png in Resources */ = {isa = PBXBuildFile; fileRef = 06610B191CFD6912000CB6DC /* image.png */; };
 		0679F5231D01B2DE00714247 /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06AEA9EE1C328CDB008ED5CF /* Kingfisher.framework */; };
 		0679F5241D01B2DE00714247 /* Kingfisher.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 06AEA9EE1C328CDB008ED5CF /* Kingfisher.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		068C0B041D13F0FC00854425 /* TableViewCellPreviewCellTypeA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068C0B021D13F0FC00854425 /* TableViewCellPreviewCellTypeA.swift */; };
+		068C0B051D13F0FC00854425 /* TableViewCellPreviewCellTypeA.xib in Resources */ = {isa = PBXBuildFile; fileRef = 068C0B031D13F0FC00854425 /* TableViewCellPreviewCellTypeA.xib */; };
+		068C0B071D13F11E00854425 /* TableViewHeaderPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068C0B061D13F11E00854425 /* TableViewHeaderPreview.swift */; };
+		068C0B091D13F14500854425 /* TableViewHeaderPreview.xib in Resources */ = {isa = PBXBuildFile; fileRef = 068C0B081D13F14500854425 /* TableViewHeaderPreview.xib */; };
 		06AEA9A51C322FD9008ED5CF /* ModelUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06AEA9A41C322FD9008ED5CF /* ModelUser.swift */; };
 		06AEA9BD1C3271B5008ED5CF /* ModelKanban.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06AEA9BC1C3271B5008ED5CF /* ModelKanban.swift */; };
 		06AEA9DF1C328A4A008ED5CF /* UIView+XIBEdit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06AEA9DE1C328A4A008ED5CF /* UIView+XIBEdit.swift */; };
@@ -88,6 +95,9 @@
 /* Begin PBXFileReference section */
 		0615FB0F1D11269F00C3D888 /* UIButtonExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
 		0615FB161D1279E300C3D888 /* blank.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = blank.wav; sourceTree = "<group>"; };
+		0615FB191D13ECE600C3D888 /* NavigationControllerPreview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationControllerPreview.swift; sourceTree = "<group>"; };
+		0615FB1B1D13ED0300C3D888 /* Preview.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Preview.storyboard; sourceTree = "<group>"; };
+		0615FB1D1D13EDF900C3D888 /* TableViewControllerPreview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewControllerPreview.swift; sourceTree = "<group>"; };
 		065FCA841C294BA400264691 /* NewbieZone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewbieZone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		065FCA871C294BA400264691 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		065FCA8C1C294BA400264691 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -101,6 +111,10 @@
 		065FCAA71C294BA400264691 /* NewbieZoneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewbieZoneUITests.swift; sourceTree = "<group>"; };
 		065FCAA91C294BA400264691 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		06610B191CFD6912000CB6DC /* image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image.png; sourceTree = "<group>"; };
+		068C0B021D13F0FC00854425 /* TableViewCellPreviewCellTypeA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCellPreviewCellTypeA.swift; sourceTree = "<group>"; };
+		068C0B031D13F0FC00854425 /* TableViewCellPreviewCellTypeA.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCellPreviewCellTypeA.xib; sourceTree = "<group>"; };
+		068C0B061D13F11E00854425 /* TableViewHeaderPreview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewHeaderPreview.swift; sourceTree = "<group>"; };
+		068C0B081D13F14500854425 /* TableViewHeaderPreview.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewHeaderPreview.xib; sourceTree = "<group>"; };
 		06AEA9A41C322FD9008ED5CF /* ModelUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelUser.swift; sourceTree = "<group>"; };
 		06AEA9BC1C3271B5008ED5CF /* ModelKanban.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelKanban.swift; sourceTree = "<group>"; };
 		06AEA9DE1C328A4A008ED5CF /* UIView+XIBEdit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+XIBEdit.swift"; sourceTree = "<group>"; };
@@ -175,6 +189,18 @@
 			path = Sound;
 			sourceTree = "<group>";
 		};
+		0615FB181D13EB9400C3D888 /* Preview */ = {
+			isa = PBXGroup;
+			children = (
+				068C0B001D13F0C000854425 /* Preview Cell Header */,
+				068C0B011D13F0CE00854425 /* Preview Cell */,
+				0615FB1B1D13ED0300C3D888 /* Preview.storyboard */,
+				0615FB191D13ECE600C3D888 /* NavigationControllerPreview.swift */,
+				0615FB1D1D13EDF900C3D888 /* TableViewControllerPreview.swift */,
+			);
+			name = Preview;
+			sourceTree = "<group>";
+		};
 		065FCA7B1C294BA400264691 = {
 			isa = PBXGroup;
 			children = (
@@ -233,6 +259,7 @@
 		065FCAB51C294BF400264691 /* Src */ = {
 			isa = PBXGroup;
 			children = (
+				0615FB181D13EB9400C3D888 /* Preview */,
 				06EB730E1C29A5A9004E66FD /* Danjon */,
 				06EB730D1C29A59D004E66FD /* Hentai Neko */,
 				06EB730C1C29A58C004E66FD /* Kanban */,
@@ -251,6 +278,24 @@
 				06E6B0CD1D104507005A7A45 /* TableViewCellKanbanCellTypeC.xib */,
 			);
 			name = "Kanban Cell";
+			sourceTree = "<group>";
+		};
+		068C0B001D13F0C000854425 /* Preview Cell Header */ = {
+			isa = PBXGroup;
+			children = (
+				068C0B061D13F11E00854425 /* TableViewHeaderPreview.swift */,
+				068C0B081D13F14500854425 /* TableViewHeaderPreview.xib */,
+			);
+			name = "Preview Cell Header";
+			sourceTree = "<group>";
+		};
+		068C0B011D13F0CE00854425 /* Preview Cell */ = {
+			isa = PBXGroup;
+			children = (
+				068C0B021D13F0FC00854425 /* TableViewCellPreviewCellTypeA.swift */,
+				068C0B031D13F0FC00854425 /* TableViewCellPreviewCellTypeA.xib */,
+			);
+			name = "Preview Cell";
 			sourceTree = "<group>";
 		};
 		06AEA99F1C3223FB008ED5CF /* Model */ = {
@@ -510,9 +555,11 @@
 				06E6B0D11D105A45005A7A45 /* avatar2.jpg in Resources */,
 				06AEAA211C33CD54008ED5CF /* GK3.jpg in Resources */,
 				065FCA8F1C294BA400264691 /* Assets.xcassets in Resources */,
+				0615FB1C1D13ED0300C3D888 /* Preview.storyboard in Resources */,
 				06AEAA291C33CDDD008ED5CF /* GK7.jpg in Resources */,
 				06AEAA0E1C33BF11008ED5CF /* TableViewHeaderKanban.xib in Resources */,
 				06AEA9E81C328BEC008ED5CF /* TableViewCellKanbanCellTypeA.xib in Resources */,
+				068C0B051D13F0FC00854425 /* TableViewCellPreviewCellTypeA.xib in Resources */,
 				06EB73121C29A5EC004E66FD /* Danjon.storyboard in Resources */,
 				06BAAA541CFD86110094E937 /* TableViewCellKanbanCellTypeB.xib in Resources */,
 				06610B1A1CFD6912000CB6DC /* image.png in Resources */,
@@ -520,6 +567,7 @@
 				06AEAA201C33CD54008ED5CF /* GK2.jpg in Resources */,
 				06E6B0CF1D104507005A7A45 /* TableViewCellKanbanCellTypeC.xib in Resources */,
 				06EB73191C29A6C7004E66FD /* HentaiNeko.storyboard in Resources */,
+				068C0B091D13F14500854425 /* TableViewHeaderPreview.xib in Resources */,
 				06AEAA281C33CDDD008ED5CF /* GK5.jpg in Resources */,
 				065FCA8D1C294BA400264691 /* Main.storyboard in Resources */,
 			);
@@ -549,10 +597,13 @@
 				06AEA9DF1C328A4A008ED5CF /* UIView+XIBEdit.swift in Sources */,
 				06AEA9BD1C3271B5008ED5CF /* ModelKanban.swift in Sources */,
 				06AEA9F51C33AA60008ED5CF /* Common.swift in Sources */,
+				068C0B071D13F11E00854425 /* TableViewHeaderPreview.swift in Sources */,
+				0615FB1A1D13ECE600C3D888 /* NavigationControllerPreview.swift in Sources */,
 				06AEAA0C1C33BEF9008ED5CF /* TableViewHeaderKanban.swift in Sources */,
 				06EB73261C29A76C004E66FD /* NavigationControllerKanban.swift in Sources */,
 				0615FB101D11269F00C3D888 /* UIButtonExtension.swift in Sources */,
 				06EB731E1C29A754004E66FD /* NavigationControllerDanjon.swift in Sources */,
+				0615FB1E1D13EDF900C3D888 /* TableViewControllerPreview.swift in Sources */,
 				06EB73271C29A76C004E66FD /* TableViewControllerKanban.swift in Sources */,
 				06AEA9A51C322FD9008ED5CF /* ModelUser.swift in Sources */,
 				06EB73231C29A763004E66FD /* TableViewControllerHentaiNeko.swift in Sources */,
@@ -564,6 +615,7 @@
 				06E6B0CE1D104507005A7A45 /* TableViewCellKanbanCellTypeC.swift in Sources */,
 				06AEA9F21C3378F6008ED5CF /* UICommon.swift in Sources */,
 				06D1056D1D0141ED00399896 /* ModelImage.swift in Sources */,
+				068C0B041D13F0FC00854425 /* TableViewCellPreviewCellTypeA.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

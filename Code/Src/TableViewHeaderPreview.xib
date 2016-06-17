@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="TableViewHeaderPreview" customModule="NewbieZone" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="400" height="30"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yWO-4I-dv0">
+                    <rect key="frame" x="0.0" y="0.0" width="400" height="30"/>
+                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="dhG-js-cCI">
+                        <rect key="frame" x="0.0" y="0.0" width="400" height="30"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9gq-jN-Ky5">
+                                <rect key="frame" x="8" y="5" width="39.5" height="19.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="9gq-jN-Ky5" firstAttribute="centerY" secondItem="dhG-js-cCI" secondAttribute="centerY" id="7AO-0E-Ue7"/>
+                            <constraint firstItem="9gq-jN-Ky5" firstAttribute="leading" secondItem="dhG-js-cCI" secondAttribute="leading" constant="8" id="AQa-Dy-RU6"/>
+                        </constraints>
+                    </view>
+                    <blurEffect style="light"/>
+                </visualEffectView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="yWO-4I-dv0" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="6fr-zF-r9I"/>
+                <constraint firstItem="yWO-4I-dv0" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" id="HHF-iA-ile"/>
+                <constraint firstItem="yWO-4I-dv0" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="V0t-yb-d2c"/>
+                <constraint firstItem="yWO-4I-dv0" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="ipr-3e-S6o"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="154" y="1"/>
+        </view>
+    </objects>
+</document>
