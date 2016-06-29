@@ -49,7 +49,6 @@ class TableViewControllerPreview: UITableViewController {
     
     override func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let viewHeader = tableView.dequeueReusableHeaderFooterViewWithIdentifier("TableViewHeaderPreview") as! TableViewHeaderPreview
-        
         return viewHeader
     }
 
