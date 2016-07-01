@@ -21,7 +21,7 @@ class TableViewCellKanbanCellTypeA: UITableViewCell {
         
         let blurEffectLight = UIBlurEffect(style: UIBlurEffectStyle.Light)
         let imageKanbanBGBlurViewLight = UIVisualEffectView(effect: blurEffectLight)
-        imageKanbanBGBlurViewLight.frame = CGRectMake(0, 0, ScreenWith, ScreenWith + 56.0)
+        imageKanbanBGBlurViewLight.frame = CGRectMake(0, 0, ScreenWidth, ScreenWidth + 56.0)
         imageKanbanBG.addSubview(imageKanbanBGBlurViewLight)
         
         // Initialization code
@@ -38,7 +38,7 @@ class TableViewCellKanbanCellTypeA: UITableViewCell {
 	static func getHeightForCell (sizeImage : CGSize) -> CGFloat{
 
 		let imageWidth: CGFloat = sizeImage.width
-		let rate:CGFloat = ScreenWith / imageWidth
+		let rate:CGFloat = ScreenWidth / imageWidth
 		return (sizeImage.height) * rate + 40
 
 	}

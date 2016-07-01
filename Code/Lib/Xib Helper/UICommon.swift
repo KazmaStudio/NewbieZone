@@ -12,7 +12,7 @@ import UIKit
 var TagCellHighlightView = 99901
 
 // MARK: - Define
-let ScreenWith = UIScreen.mainScreen().bounds.width
+let ScreenWidth = UIScreen.mainScreen().bounds.width
 
 let ScreenHeight = UIScreen.mainScreen().bounds.height
 
@@ -28,6 +28,8 @@ var px1 = 1 / ScreenScale
 
 var MarginDefault: CGFloat = 8
 
+let topStatusBarView : UIVisualEffectView = UIVisualEffectView.init(frame: frame(0 , y: 0, w: ScreenWidth, h: 20))
+
 // MARK: - Function
 func ShakeView(view : UIView){
     let shake = CABasicAnimation.init(keyPath: "position")
@@ -39,8 +41,8 @@ func ShakeView(view : UIView){
     view.layer.addAnimation(shake, forKey: "position")
 }
 
-func CellShouldHighlightAnimate(cell : UITableViewCell){
-    let view = UIView.init(frame: frame(0, y: 0, w: cell.frame.size.width, h: cell.frame.size.height - 8))
+func CellShouldHighlightAnimate(cell : UITableViewCell, deltaHeight : CGFloat){
+    let view = UIView.init(frame: frame(0, y: 0, w: cell.frame.size.width, h: cell.frame.size.height + deltaHeight))
     view.backgroundColor = rgba(0, g: 0, b: 0, a: 0)
     view.tag = TagCellHighlightView
     cell.contentView.addSubview(view)
@@ -54,8 +56,15 @@ func CellDidUnHighlightAnimate(cell : UITableViewCell){
     UIView.animateWithDuration(0.2, animations: {view!.backgroundColor = rgba(0, g: 0, b: 0, a: 0)}, completion: {(value: Bool) in view!.removeFromSuperview()})
 }
 
+func showTopStatusBlurView(){
+    let blurEffectLight = UIBlurEffect(style: UIBlurEffectStyle.ExtraLight)
+    topStatusBarView.effect = blurEffectLight
+    UIApplication.sharedApplication().keyWindow?.addSubview(topStatusBarView)
+}
 
-
+func hideTopStatusBlurView(){
+    topStatusBarView.removeFromSuperview()
+}
 
 
 

@@ -207,7 +207,7 @@ class TableViewControllerKanban: UITableViewController {
 			cell.imageKanbanContent.image = nil
 			
 			let imageWidth: CGFloat = modelKanban.kanbanContentImage![0].width
-			let rate:CGFloat = ScreenWith / imageWidth
+			let rate:CGFloat = ScreenWidth / imageWidth
 			
 			cell.imageKanbanContentHeight.constant = (modelKanban.kanbanContentImage![0].height)! * rate
 			
@@ -331,7 +331,7 @@ class TableViewControllerKanban: UITableViewController {
 		
 		if(modelKanban.kanbanHasDetail == true){
 			let cell = tableView.cellForRowAtIndexPath(indexPath)
-			CellShouldHighlightAnimate(cell!)
+			CellShouldHighlightAnimate(cell!, deltaHeight: -8.0)
 		}
 		
 		return true

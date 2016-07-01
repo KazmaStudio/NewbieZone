@@ -16,7 +16,7 @@ class TableViewCellKanbanCellTypeC: UITableViewCell {
     
 	@IBOutlet var labelContent: UILabel!
 	
-	static let fontSizeLabelSubTitle: CGFloat = 15
+	static let fontSizeLabelSubTitle: CGFloat = 12
 	
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -30,7 +30,7 @@ class TableViewCellKanbanCellTypeC: UITableViewCell {
     }
 	
 	static func getWidthLabelContent () -> CGFloat{
-		return ScreenWith - 2 * MarginDefault
+		return ScreenWidth - 2 * MarginDefault
 	}
 	
     static func getHeightForCell (heightLableContent: CGFloat, countImage: Int) -> CGFloat{
@@ -47,23 +47,23 @@ class TableViewCellKanbanCellTypeC: UITableViewCell {
         case 0:
             viewImageContentHeight = 0
         case 1:
-            viewImageContentHeight = MarginDefault + ScreenWith - 2 * MarginDefault
+            viewImageContentHeight = MarginDefault + ScreenWidth - 2 * MarginDefault
         case 2:
-            viewImageContentHeight = MarginDefault + (ScreenWith - 3 * MarginDefault) / 2
+            viewImageContentHeight = MarginDefault + (ScreenWidth - 3 * MarginDefault) / 2
         case 3:
-            viewImageContentHeight = MarginDefault + (ScreenWith - 3 * MarginDefault) + MarginDefault
+            viewImageContentHeight = MarginDefault + (ScreenWidth - 3 * MarginDefault) + MarginDefault
         case 4:
-            viewImageContentHeight = MarginDefault + (ScreenWith - 3 * MarginDefault) + MarginDefault
+            viewImageContentHeight = MarginDefault + (ScreenWidth - 3 * MarginDefault) + MarginDefault
         case 5:
-            viewImageContentHeight = MarginDefault + (ScreenWith - 3 * MarginDefault) / 2 + (ScreenWith - 4 * MarginDefault) / 3 + MarginDefault
+            viewImageContentHeight = MarginDefault + (ScreenWidth - 3 * MarginDefault) / 2 + (ScreenWidth - 4 * MarginDefault) / 3 + MarginDefault
         case 6:
-            viewImageContentHeight = MarginDefault + (ScreenWith - 4 * MarginDefault) / 3 * 2 + MarginDefault
+            viewImageContentHeight = MarginDefault + (ScreenWidth - 4 * MarginDefault) / 3 * 2 + MarginDefault
         case 7:
-            viewImageContentHeight = MarginDefault + (ScreenWith - 3 * MarginDefault) + (ScreenWith - 4 * MarginDefault) / 3 + MarginDefault + MarginDefault
+            viewImageContentHeight = MarginDefault + (ScreenWidth - 3 * MarginDefault) + (ScreenWidth - 4 * MarginDefault) / 3 + MarginDefault + MarginDefault
         case 8:
-            viewImageContentHeight = MarginDefault + (ScreenWith - 4 * MarginDefault) / 3 * 2 + (ScreenWith - 3 * MarginDefault) / 2 + MarginDefault + MarginDefault
+            viewImageContentHeight = MarginDefault + (ScreenWidth - 4 * MarginDefault) / 3 * 2 + (ScreenWidth - 3 * MarginDefault) / 2 + MarginDefault + MarginDefault
         case 9:
-            viewImageContentHeight = MarginDefault + (ScreenWith - 4 * MarginDefault) + MarginDefault + MarginDefault
+            viewImageContentHeight = MarginDefault + (ScreenWidth - 4 * MarginDefault) + MarginDefault + MarginDefault
         default:
             viewImageContentHeight = 0
         }
@@ -95,7 +95,7 @@ class TableViewCellKanbanCellTypeC: UITableViewCell {
             break
         case 1:
 
-            let button1 = UIButton.init(frame: CGRectMake(MarginDefault, MarginDefault, ScreenWith - 2 * MarginDefault, ScreenWith - 2 * MarginDefault))
+            let button1 = UIButton.init(frame: CGRectMake(MarginDefault, MarginDefault, ScreenWidth - 2 * MarginDefault, ScreenWidth - 2 * MarginDefault))
             button1.cornerRadius = 4
 			button1.kf_setImageWithURL(NSURL(string: qiniuResourceImageURL + arrayImage[0].imageName)!,
 			                           forState: .Normal,
@@ -114,7 +114,7 @@ class TableViewCellKanbanCellTypeC: UITableViewCell {
 			
         case 2:
             
-            let button1 = UIButton.init(frame: CGRectMake(MarginDefault, MarginDefault, (ScreenWith - 3 * MarginDefault) / 2, (ScreenWith - 3 * MarginDefault) / 2))
+            let button1 = UIButton.init(frame: CGRectMake(MarginDefault, MarginDefault, (ScreenWidth - 3 * MarginDefault) / 2, (ScreenWidth - 3 * MarginDefault) / 2))
 			button1.imageView?.contentMode = .ScaleAspectFill
 			button1.kf_setImageWithURL(NSURL(string: qiniuResourceImageURL + arrayImage[0].imageName)!,
 			                                     forState: .Normal,
@@ -129,7 +129,7 @@ class TableViewCellKanbanCellTypeC: UITableViewCell {
             button1.cornerRadius = 4
             button1.addGrayHighlightEffect()
             
-            let button2 = UIButton.init(frame: CGRectMake(MarginDefault + (ScreenWith - 3 * MarginDefault) / 2 + MarginDefault, MarginDefault, (ScreenWith - 3 * MarginDefault) / 2, (ScreenWith - 3 * MarginDefault) / 2))
+            let button2 = UIButton.init(frame: CGRectMake(MarginDefault + (ScreenWidth - 3 * MarginDefault) / 2 + MarginDefault, MarginDefault, (ScreenWidth - 3 * MarginDefault) / 2, (ScreenWidth - 3 * MarginDefault) / 2))
             button2.cornerRadius = 4
             button2.addGrayHighlightEffect()
 			button2.kf_setImageWithURL(NSURL(string: qiniuResourceImageURL + arrayImage[1].imageName)!,
@@ -149,7 +149,7 @@ class TableViewCellKanbanCellTypeC: UITableViewCell {
             
         case 3:
             
-            let button1 = UIButton.init(frame: CGRectMake(MarginDefault, MarginDefault, ScreenWith - 2 * MarginDefault, (ScreenWith - 3 * MarginDefault) / 2))
+            let button1 = UIButton.init(frame: CGRectMake(MarginDefault, MarginDefault, ScreenWidth - 2 * MarginDefault, (ScreenWidth - 3 * MarginDefault) / 2))
             button1.cornerRadius = 4
 			button1.kf_setImageWithURL(NSURL(string: qiniuResourceImageURL + arrayImage[0].imageName)!,
 			                           forState: .Normal,
@@ -164,7 +164,7 @@ class TableViewCellKanbanCellTypeC: UITableViewCell {
 			button1.addGrayHighlightEffect()
 			button1.imageView?.contentMode = .ScaleAspectFill
 			
-            let button2 = UIButton.init(frame: CGRectMake(MarginDefault, MarginDefault + (ScreenWith - 3 * MarginDefault) / 2 + MarginDefault, (ScreenWith - 3 * MarginDefault) / 2, (ScreenWith - 3 * MarginDefault) / 2))
+            let button2 = UIButton.init(frame: CGRectMake(MarginDefault, MarginDefault + (ScreenWidth - 3 * MarginDefault) / 2 + MarginDefault, (ScreenWidth - 3 * MarginDefault) / 2, (ScreenWidth - 3 * MarginDefault) / 2))
             button2.cornerRadius = 4
 			button2.kf_setImageWithURL(NSURL(string: qiniuResourceImageURL + arrayImage[1].imageName)!,
 			                           forState: .Normal,
@@ -179,7 +179,7 @@ class TableViewCellKanbanCellTypeC: UITableViewCell {
 			button2.addGrayHighlightEffect()
 			button2.imageView?.contentMode = .ScaleAspectFill
 			
-            let button3 = UIButton.init(frame: CGRectMake(MarginDefault + (ScreenWith - 3 * MarginDefault) / 2 + MarginDefault, MarginDefault + (ScreenWith - 3 * MarginDefault) / 2 + MarginDefault, (ScreenWith - 3 * MarginDefault) / 2, (ScreenWith - 3 * MarginDefault) / 2))
+            let button3 = UIButton.init(frame: CGRectMake(MarginDefault + (ScreenWidth - 3 * MarginDefault) / 2 + MarginDefault, MarginDefault + (ScreenWidth - 3 * MarginDefault) / 2 + MarginDefault, (ScreenWidth - 3 * MarginDefault) / 2, (ScreenWidth - 3 * MarginDefault) / 2))
             button3.cornerRadius = 4
 			button3.imageView?.contentMode = .ScaleAspectFill
 			button3.kf_setImageWithURL(NSURL(string: qiniuResourceImageURL + arrayImage[2].imageName)!,
@@ -202,7 +202,7 @@ class TableViewCellKanbanCellTypeC: UITableViewCell {
             
 			
             
-            let button1 = UIButton.init(frame: CGRectMake(MarginDefault, MarginDefault, (ScreenWith - 3 * MarginDefault) / 2, (ScreenWith - 3 * MarginDefault) / 2))
+            let button1 = UIButton.init(frame: CGRectMake(MarginDefault, MarginDefault, (ScreenWidth - 3 * MarginDefault) / 2, (ScreenWidth - 3 * MarginDefault) / 2))
             button1.cornerRadius = 4
 			button1.imageView?.contentMode = .ScaleAspectFill
 			button1.kf_setImageWithURL(NSURL(string: qiniuResourceImageURL + arrayImage[0].imageName)!,
@@ -217,7 +217,7 @@ class TableViewCellKanbanCellTypeC: UITableViewCell {
 			})
 			button1.addGrayHighlightEffect()
             
-            let button2 = UIButton.init(frame: CGRectMake(MarginDefault + (ScreenWith - 3 * MarginDefault) / 2 + MarginDefault, MarginDefault, (ScreenWith - 3 * MarginDefault) / 2, (ScreenWith - 3 * MarginDefault) / 2))
+            let button2 = UIButton.init(frame: CGRectMake(MarginDefault + (ScreenWidth - 3 * MarginDefault) / 2 + MarginDefault, MarginDefault, (ScreenWidth - 3 * MarginDefault) / 2, (ScreenWidth - 3 * MarginDefault) / 2))
             button2.cornerRadius = 4
 			button2.imageView?.contentMode = .ScaleAspectFill
 			button2.kf_setImageWithURL(NSURL(string: qiniuResourceImageURL + arrayImage[1].imageName)!,
@@ -233,7 +233,7 @@ class TableViewCellKanbanCellTypeC: UITableViewCell {
 			button2.addGrayHighlightEffect()
 			
 			
-            let button3 = UIButton.init(frame: CGRectMake(MarginDefault, MarginDefault + (ScreenWith - 3 * MarginDefault) / 2 + MarginDefault, (ScreenWith - 3 * MarginDefault) / 2, (ScreenWith - 3 * MarginDefault) / 2))
+            let button3 = UIButton.init(frame: CGRectMake(MarginDefault, MarginDefault + (ScreenWidth - 3 * MarginDefault) / 2 + MarginDefault, (ScreenWidth - 3 * MarginDefault) / 2, (ScreenWidth - 3 * MarginDefault) / 2))
             button3.cornerRadius = 4
 			button3.imageView?.contentMode = .ScaleAspectFill
 			button3.kf_setImageWithURL(NSURL(string: qiniuResourceImageURL + arrayImage[2].imageName)!,
@@ -249,7 +249,7 @@ class TableViewCellKanbanCellTypeC: UITableViewCell {
 			button3.addGrayHighlightEffect()
 			
 			
-            let button4 = UIButton.init(frame: CGRectMake(MarginDefault + (ScreenWith - 3 * MarginDefault) / 2 + MarginDefault, MarginDefault + (ScreenWith - 3 * MarginDefault) / 2 + MarginDefault, (ScreenWith - 3 * MarginDefault) / 2, (ScreenWith - 3 * MarginDefault) / 2))
+            let button4 = UIButton.init(frame: CGRectMake(MarginDefault + (ScreenWidth - 3 * MarginDefault) / 2 + MarginDefault, MarginDefault + (ScreenWidth - 3 * MarginDefault) / 2 + MarginDefault, (ScreenWidth - 3 * MarginDefault) / 2, (ScreenWidth - 3 * MarginDefault) / 2))
 			button4.imageView?.contentMode = .ScaleAspectFill
             button4.cornerRadius = 4
 			button4.kf_setImageWithURL(NSURL(string: qiniuResourceImageURL + arrayImage[3].imageName)!,
@@ -271,7 +271,7 @@ class TableViewCellKanbanCellTypeC: UITableViewCell {
             
         case 5:
             
-            let button1 = UIButton.init(frame: CGRectMake(MarginDefault, MarginDefault, (ScreenWith - 4 * MarginDefault) / 3, (ScreenWith - 4 * MarginDefault) / 3))
+            let button1 = UIButton.init(frame: CGRectMake(MarginDefault, MarginDefault, (ScreenWidth - 4 * MarginDefault) / 3, (ScreenWidth - 4 * MarginDefault) / 3))
             button1.cornerRadius = 4
 			button1.imageView?.contentMode = .ScaleAspectFill
 			button1.kf_setImageWithURL(NSURL(string: qiniuResourceImageURL + arrayImage[0].imageName)!,
@@ -286,7 +286,7 @@ class TableViewCellKanbanCellTypeC: UITableViewCell {
 			})
 			button1.addGrayHighlightEffect()
 			
-            let button2 = UIButton.init(frame: CGRectMake(MarginDefault + (ScreenWith - 4 * MarginDefault) / 3 + MarginDefault, MarginDefault, (ScreenWith - 4 * MarginDefault) / 3, (ScreenWith - 4 * MarginDefault) / 3))
+            let button2 = UIButton.init(frame: CGRectMake(MarginDefault + (ScreenWidth - 4 * MarginDefault) / 3 + MarginDefault, MarginDefault, (ScreenWidth - 4 * MarginDefault) / 3, (ScreenWidth - 4 * MarginDefault) / 3))
             button2.cornerRadius = 4
 			button2.imageView?.contentMode = .ScaleAspectFill
 			button2.kf_setImageWithURL(NSURL(string: qiniuResourceImageURL + arrayImage[1].imageName)!,
@@ -301,7 +301,7 @@ class TableViewCellKanbanCellTypeC: UITableViewCell {
 			})
 			button2.addGrayHighlightEffect()
 			
-            let button3 = UIButton.init(frame: CGRectMake(MarginDefault + (ScreenWith - 4 * MarginDefault) / 3 + MarginDefault + (ScreenWith - 4 * MarginDefault) / 3 + MarginDefault, MarginDefault, (ScreenWith - 4 * MarginDefault) / 3, (ScreenWith - 4 * MarginDefault) / 3))
+            let button3 = UIButton.init(frame: CGRectMake(MarginDefault + (ScreenWidth - 4 * MarginDefault) / 3 + MarginDefault + (ScreenWidth - 4 * MarginDefault) / 3 + MarginDefault, MarginDefault, (ScreenWidth - 4 * MarginDefault) / 3, (ScreenWidth - 4 * MarginDefault) / 3))
             button3.cornerRadius = 4
 			button3.imageView?.contentMode = .ScaleAspectFill
 			button3.kf_setImageWithURL(NSURL(string: qiniuResourceImageURL + arrayImage[2].imageName)!,
@@ -316,7 +316,7 @@ class TableViewCellKanbanCellTypeC: UITableViewCell {
 			})
 			button3.addGrayHighlightEffect()
 			
-            let button4 = UIButton.init(frame: CGRectMake(MarginDefault, MarginDefault + (ScreenWith - 4 * MarginDefault) / 3 + MarginDefault, (ScreenWith - 3 * MarginDefault) / 2, (ScreenWith - 3 * MarginDefault) / 2))
+            let button4 = UIButton.init(frame: CGRectMake(MarginDefault, MarginDefault + (ScreenWidth - 4 * MarginDefault) / 3 + MarginDefault, (ScreenWidth - 3 * MarginDefault) / 2, (ScreenWidth - 3 * MarginDefault) / 2))
             button4.cornerRadius = 4
 			button4.imageView?.contentMode = .ScaleAspectFill
 			button4.kf_setImageWithURL(NSURL(string: qiniuResourceImageURL + arrayImage[3].imageName)!,
@@ -331,7 +331,7 @@ class TableViewCellKanbanCellTypeC: UITableViewCell {
 			})
 			button4.addGrayHighlightEffect()
 			
-            let button5 = UIButton.init(frame: CGRectMake(MarginDefault + (ScreenWith - 3 * MarginDefault) / 2 + MarginDefault, MarginDefault + (ScreenWith - 4 * MarginDefault) / 3 + MarginDefault, (ScreenWith - 3 * MarginDefault) / 2, (ScreenWith - 3 * MarginDefault) / 2))
+            let button5 = UIButton.init(frame: CGRectMake(MarginDefault + (ScreenWidth - 3 * MarginDefault) / 2 + MarginDefault, MarginDefault + (ScreenWidth - 4 * MarginDefault) / 3 + MarginDefault, (ScreenWidth - 3 * MarginDefault) / 2, (ScreenWidth - 3 * MarginDefault) / 2))
             button5.cornerRadius = 4
 			button5.imageView?.contentMode = .ScaleAspectFill
 			button5.kf_setImageWithURL(NSURL(string: qiniuResourceImageURL + arrayImage[4].imageName)!,
@@ -353,7 +353,7 @@ class TableViewCellKanbanCellTypeC: UITableViewCell {
             viewTarget.addSubview(button5)
 
 		case 6:
-            let button1 = UIButton.init(frame: CGRectMake(MarginDefault, MarginDefault, (ScreenWith - 4 * MarginDefault) / 3, (ScreenWith - 4 * MarginDefault) / 3))
+            let button1 = UIButton.init(frame: CGRectMake(MarginDefault, MarginDefault, (ScreenWidth - 4 * MarginDefault) / 3, (ScreenWidth - 4 * MarginDefault) / 3))
             button1.cornerRadius = 4
             button1.imageView?.contentMode = .ScaleAspectFill
             button1.kf_setImageWithURL(NSURL(string: qiniuResourceImageURL + arrayImage[0].imageName)!,
@@ -368,7 +368,7 @@ class TableViewCellKanbanCellTypeC: UITableViewCell {
             })
             button1.addGrayHighlightEffect()
             
-            let button2 = UIButton.init(frame: CGRectMake(MarginDefault + (ScreenWith - 4 * MarginDefault) / 3 + MarginDefault, MarginDefault, (ScreenWith - 4 * MarginDefault) / 3, (ScreenWith - 4 * MarginDefault) / 3))
+            let button2 = UIButton.init(frame: CGRectMake(MarginDefault + (ScreenWidth - 4 * MarginDefault) / 3 + MarginDefault, MarginDefault, (ScreenWidth - 4 * MarginDefault) / 3, (ScreenWidth - 4 * MarginDefault) / 3))
             button2.cornerRadius = 4
             button2.imageView?.contentMode = .ScaleAspectFill
             button2.kf_setImageWithURL(NSURL(string: qiniuResourceImageURL + arrayImage[1].imageName)!,
@@ -383,7 +383,7 @@ class TableViewCellKanbanCellTypeC: UITableViewCell {
             })
             button2.addGrayHighlightEffect()
             
-            let button3 = UIButton.init(frame: CGRectMake(MarginDefault + (ScreenWith - 4 * MarginDefault) / 3 + MarginDefault + (ScreenWith - 4 * MarginDefault) / 3 + MarginDefault, MarginDefault, (ScreenWith - 4 * MarginDefault) / 3, (ScreenWith - 4 * MarginDefault) / 3))
+            let button3 = UIButton.init(frame: CGRectMake(MarginDefault + (ScreenWidth - 4 * MarginDefault) / 3 + MarginDefault + (ScreenWidth - 4 * MarginDefault) / 3 + MarginDefault, MarginDefault, (ScreenWidth - 4 * MarginDefault) / 3, (ScreenWidth - 4 * MarginDefault) / 3))
             button3.cornerRadius = 4
             button3.imageView?.contentMode = .ScaleAspectFill
             button3.kf_setImageWithURL(NSURL(string: qiniuResourceImageURL + arrayImage[2].imageName)!,

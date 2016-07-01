@@ -10,6 +10,13 @@ import UIKit
 
 class TableViewCellPreviewCellTypeA: UITableViewCell {
 
+    @IBOutlet weak var labelReadCount: UILabel!
+    @IBOutlet weak var imageViewContent: UIImageView!
+    
+    @IBOutlet weak var labelTitle: UILabel!
+    
+    @IBOutlet weak var labelSubTitle: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

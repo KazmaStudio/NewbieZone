@@ -58,5 +58,70 @@ extension UIView {
         }
     }
     
+    @IBInspectable var borderColor: UIColor {
+        
+        get {
+            
+            return UIColor(CGColor: layer.borderColor!)
+            
+        }
+        
+        set {
+            
+            layer.borderColor = newValue.CGColor
+            
+        }
+    }
+    
+    @IBInspectable var b1px: Bool {
+        
+        get{
+            
+            return false
+            
+        }
+        
+        set {
+            
+            if(newValue){
+                
+                self.borderWidth = px1
+                
+            }
+            
+        }
+        
+        
+    }
+    
+    @IBInspectable var borderBottom: Bool {
+        
+        get{
+            
+            return false
+            
+        }
+        
+        set {
+            
+            if(newValue){
+                
+                self.layoutSubviews();
+                
+                let bottomBorder: CALayer = CALayer()
+                
+                bottomBorder.frame = CGRect(x: 0.0, y: self.frame.height - px1, width: ScreenWidth, height: px1)
+                
+                bottomBorder.backgroundColor = rgba(220, g: 220, b: 220, a: 1).CGColor
+                
+                self.layer.addSublayer(bottomBorder)
+                
+            }
+            
+        }
+        
+        
+    }
+    
     
 }

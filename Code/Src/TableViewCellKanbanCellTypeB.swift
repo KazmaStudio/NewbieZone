@@ -28,7 +28,7 @@ class TableViewCellKanbanCellTypeB: UITableViewCell {
     }
 	
 	static func getWidthLabelSubTitle () -> CGFloat{
-		return ScreenWith - 2 * MarginDefault
+		return ScreenWidth - 2 * MarginDefault
 	}
 	
 	static func getHeightForCell (heightLabel: CGFloat) -> CGFloat{

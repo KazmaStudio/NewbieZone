@@ -38,20 +38,20 @@
                                     </userDefinedRuntimeAttributes>
                                 </imageView>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="52m-Mj-mxH">
-                                    <rect key="frame" x="52" y="12" width="31" height="15"/>
-                                    <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="12"/>
+                                    <rect key="frame" x="52" y="16" width="26" height="12"/>
+                                    <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="10"/>
                                     <color key="textColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fj1-QV-fK9">
-                                    <rect key="frame" x="52" y="28" width="43" height="20"/>
-                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                    <rect key="frame" x="52" y="31" width="37.5" height="17"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                             </subviews>
                             <constraints>
-                                <constraint firstItem="52m-Mj-mxH" firstAttribute="top" secondItem="3al-Ak-5yT" secondAttribute="top" id="1ia-ce-513"/>
+                                <constraint firstItem="52m-Mj-mxH" firstAttribute="top" secondItem="3al-Ak-5yT" secondAttribute="top" constant="4" id="1ia-ce-513"/>
                                 <constraint firstItem="52m-Mj-mxH" firstAttribute="centerX" secondItem="Fj1-QV-fK9" secondAttribute="centerX" id="6ir-vB-OV2"/>
                                 <constraint firstItem="Fj1-QV-fK9" firstAttribute="bottom" secondItem="3al-Ak-5yT" secondAttribute="bottom" id="ITZ-UT-m95"/>
                                 <constraint firstItem="52m-Mj-mxH" firstAttribute="leading" secondItem="3al-Ak-5yT" secondAttribute="trailing" constant="8" id="Ulm-hu-UJr"/>

@@ -9,7 +9,7 @@
 import UIKit
 
 class TableViewControllerPreview: UITableViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -24,6 +24,15 @@ class TableViewControllerPreview: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        self.navigationController?.navigationBarHidden = true
+        showTopStatusBlurView()
+    }
+    
+    override func viewDidDisappear(animated: Bool) {
+        hideTopStatusBlurView()
     }
 
     override func didReceiveMemoryWarning() {
@@ -49,17 +58,78 @@ class TableViewControllerPreview: UITableViewController {
     
     override func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let viewHeader = tableView.dequeueReusableHeaderFooterViewWithIdentifier("TableViewHeaderPreview") as! TableViewHeaderPreview
+        viewHeader.contentView.backgroundColor = rgba(180, g: 180, b: 180, a: 1)
+        viewHeader.labelDate.text = "6月23日"
+        
+        addTagViewsToView(viewHeader, tags: ["新番","手办","展会"])
+        
         return viewHeader
+    }
+    
+    override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        
+        return 64
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("TableViewCellPreviewCellTypeA", forIndexPath: indexPath) as! TableViewCellPreviewCellTypeA
+        
+        cell.selectionStyle = UITableViewCellSelectionStyle.None
 
-        // Configure the cell...
+        cell.imageViewContent.image = UIImage.init(named: "event1.jpg")
+        cell.labelTitle.text = "番剧名称 第一季第五集"
+        cell.labelSubTitle.text = "优酷 bilibili"
+        cell.labelReadCount.text = "2,332"
 
         return cell
     }
 
+    override func tableView(tableView: UITableView, shouldHighlightRowAtIndexPath indexPath: NSIndexPath) -> Bool {
+        
+        let cell = tableView.cellForRowAtIndexPath(indexPath)
+        CellShouldHighlightAnimate(cell!, deltaHeight: 0)
+        
+        return true
+    }
+    
+    override func tableView(tableView: UITableView, didUnhighlightRowAtIndexPath indexPath: NSIndexPath) {
+
+        let cell = tableView.cellForRowAtIndexPath(indexPath)
+        CellDidUnHighlightAnimate(cell!)
+        
+    }
+    
+    // MARK: - func
+    func addTagViewsToView(view: UIView, tags: Array<String>) {
+        
+        var lastX = ScreenWidth
+        
+        for i in 0 ..< tags.count{
+            
+            let tagName = tags[i]
+            
+            let tagViewWidth = CGFloat(tagName.characters.count) * 10 + MarginDefault
+            
+            lastX = lastX - tagViewWidth - MarginDefault
+            
+            let viewTag = UILabel.init(frame: frame(lastX, y: (view.frame.height - 14 ) / 2, w: tagViewWidth, h: 14))
+
+            viewTag.backgroundColor = rgba(220, g: 220, b: 220, a: 220)
+            viewTag.cornerRadius = 6
+            viewTag.textColor = UIColor.whiteColor()
+            viewTag.text = tagName
+            viewTag.font = UIFont.systemFontOfSize(10)
+            viewTag.textAlignment = .Center
+            
+            view.addSubview(viewTag)
+            
+        }
+        
+        
+    }
+    
+    
+    
     /*
     // Override to support conditional editing of the table view.
     override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
