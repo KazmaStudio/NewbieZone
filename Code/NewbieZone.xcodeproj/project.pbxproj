@@ -11,6 +11,8 @@
 		0612C7291D264ADC0088C325 /* event2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0612C7251D264ADC0088C325 /* event2.jpg */; };
 		0612C72A1D264ADC0088C325 /* event3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0612C7261D264ADC0088C325 /* event3.jpg */; };
 		0612C72B1D264ADC0088C325 /* event4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0612C7271D264ADC0088C325 /* event4.jpg */; };
+		0612C72F1D2676470088C325 /* ViewControllerPreviewDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0612C72D1D2676470088C325 /* ViewControllerPreviewDetail.swift */; };
+		0612C7301D2676470088C325 /* ViewControllerPreviewDetail.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0612C72E1D2676470088C325 /* ViewControllerPreviewDetail.xib */; };
 		0615FB101D11269F00C3D888 /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0615FB0F1D11269F00C3D888 /* UIButtonExtension.swift */; };
 		0615FB171D1279E300C3D888 /* blank.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0615FB161D1279E300C3D888 /* blank.wav */; };
 		0615FB1A1D13ECE600C3D888 /* NavigationControllerPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0615FB191D13ECE600C3D888 /* NavigationControllerPreview.swift */; };
@@ -101,6 +103,8 @@
 		0612C7251D264ADC0088C325 /* event2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = event2.jpg; sourceTree = "<group>"; };
 		0612C7261D264ADC0088C325 /* event3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = event3.jpg; sourceTree = "<group>"; };
 		0612C7271D264ADC0088C325 /* event4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = event4.jpg; sourceTree = "<group>"; };
+		0612C72D1D2676470088C325 /* ViewControllerPreviewDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerPreviewDetail.swift; sourceTree = "<group>"; };
+		0612C72E1D2676470088C325 /* ViewControllerPreviewDetail.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewControllerPreviewDetail.xib; sourceTree = "<group>"; };
 		0615FB0F1D11269F00C3D888 /* UIButtonExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
 		0615FB161D1279E300C3D888 /* blank.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = blank.wav; sourceTree = "<group>"; };
 		0615FB191D13ECE600C3D888 /* NavigationControllerPreview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationControllerPreview.swift; sourceTree = "<group>"; };
@@ -189,6 +193,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0612C72C1D26760A0088C325 /* PreviewDetail */ = {
+			isa = PBXGroup;
+			children = (
+				0612C72D1D2676470088C325 /* ViewControllerPreviewDetail.swift */,
+				0612C72E1D2676470088C325 /* ViewControllerPreviewDetail.xib */,
+			);
+			name = PreviewDetail;
+			sourceTree = "<group>";
+		};
 		0615FB131D1276DD00C3D888 /* Sound */ = {
 			isa = PBXGroup;
 			children = (
@@ -202,6 +215,7 @@
 			children = (
 				068C0B001D13F0C000854425 /* Preview Cell Header */,
 				068C0B011D13F0CE00854425 /* Preview Cell */,
+				0612C72C1D26760A0088C325 /* PreviewDetail */,
 				0615FB1B1D13ED0300C3D888 /* Preview.storyboard */,
 				0615FB191D13ECE600C3D888 /* NavigationControllerPreview.swift */,
 				0615FB1D1D13EDF900C3D888 /* TableViewControllerPreview.swift */,
@@ -571,6 +585,7 @@
 				065FCA8F1C294BA400264691 /* Assets.xcassets in Resources */,
 				0615FB1C1D13ED0300C3D888 /* Preview.storyboard in Resources */,
 				06AEAA291C33CDDD008ED5CF /* GK7.jpg in Resources */,
+				0612C7301D2676470088C325 /* ViewControllerPreviewDetail.xib in Resources */,
 				06AEAA0E1C33BF11008ED5CF /* TableViewHeaderKanban.xib in Resources */,
 				06AEA9E81C328BEC008ED5CF /* TableViewCellKanbanCellTypeA.xib in Resources */,
 				068C0B051D13F0FC00854425 /* TableViewCellPreviewCellTypeA.xib in Resources */,
@@ -632,6 +647,7 @@
 				06AEA9F21C3378F6008ED5CF /* UICommon.swift in Sources */,
 				06D1056D1D0141ED00399896 /* ModelImage.swift in Sources */,
 				068C0B041D13F0FC00854425 /* TableViewCellPreviewCellTypeA.swift in Sources */,
+				0612C72F1D2676470088C325 /* ViewControllerPreviewDetail.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
